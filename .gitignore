@@ -1,7 +1,170 @@
 ### AL ###
 #Template for AL projects for Dynamics 365 Business Central
 #launch.json folder
-.vscode/
+.vscode/<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A.M.P.company — Martial Arts</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-bolt"></i>
+        A.M.P.<span>company</span>
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Главная</a></li>
+          <li><a href="tournaments.html">Турниры</a></li>
+          <li><a href="results.html">Результаты</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Виды спорта <i class="fas fa-chevron-down" style="font-size:0.75rem;"></i></a>
+            <div class="dropdown-menu" id="sports-dropdown">
+              <!-- filled by JS -->
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="lang-switcher" id="lang-switcher"></div>
+      <div id="auth-area"></div>
+      <div class="burger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SLIDER -->
+  <section class="hero">
+    <div class="slider">
+      <div class="slide active" style="background: linear-gradient(135deg, #1a0000, #0a0a0a);">
+        <div class="slide-content">
+          <h1>ОНЛАЙН-<span>ТРЕНЕРЫ</span><br>ПО ВСЕМ ВИДАМ СПОРТА</h1>
+          <p>Персональные программы от профессионалов. Бокс, ММА, дзюдо, самбо, кикбоксинг и все виды единоборств. Тренируйся где угодно.</p>
+          <a href="#contact" class="btn btn-primary"><i class="fas fa-dumbbell"></i> Начать тренировки</a>
+        </div>
+      </div>
+      <div class="slide" style="background: linear-gradient(135deg, #001a1a, #0a0a0a);">
+        <div class="slide-content">
+          <h1>ПСИХОЛОГИЧЕСКАЯ<br><span>ПОДДЕРЖКА</span> СПОРТСМЕНА</h1>
+          <p>Работа с мотивацией, стрессом и выгоранием. Спортивные психологи помогут выйти на новый уровень ментальной силы.</p>
+          <a href="#contact" class="btn btn-primary"><i class="fas fa-brain"></i> Записаться к психологу</a>
+        </div>
+      </div>
+      <div class="slide" style="background: linear-gradient(135deg, #1a0a00, #0a0a0a);">
+        <div class="slide-content">
+          <h1>ТУРНИРЫ И<br><span>СОРЕВНОВАНИЯ</span></h1>
+          <p>Участвуй в официальных и любительских турнирах. Фильтруй по виду спорта и дате. Регистрируйся онлайн.</p>
+          <a href="tournaments.html" class="btn btn-primary"><i class="fas fa-trophy"></i> Смотреть турниры</a>
+        </div>
+      </div>
+    </div>
+    <div class="slider-dots">
+      <div class="dot active"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section">
+    <h2 class="section-title">НАШИ <span>УСЛУГИ</span></h2>
+    <p class="section-subtitle">Всё для твоего роста как спортсмена — от техники до ментальной устойчивости</p>
+    
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-user-ninja"></i></div>
+        <h3>Онлайн-тренер</h3>
+        <p>Индивидуальные занятия с действующими и бывшими профессионалами по 25+ видам спорта. Видеосвязь, разбор техники, план тренировок.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-brain"></i></div>
+        <h3>Спортивный психолог</h3>
+        <p>Работа с предсоревновательным стрессом, восстановление после поражений, построение чемпионского мышления.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-clipboard-list"></i></div>
+        <h3>Персональный план</h3>
+        <p>Программа тренировок и питания под твои цели, уровень и расписание. Корректировки каждую неделю.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-video"></i></div>
+        <h3>Разбор техники</h3>
+        <p>Присылай видео своих тренировок — получи детальный разбор ошибок и рекомендации по улучшению.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-users"></i></div>
+        <h3>Групповые сборы</h3>
+        <p>Онлайн-сборы и челленджи с другими атлетами. Мотивация, конкуренция и поддержка сообщества.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-medal"></i></div>
+        <h3>Подготовка к турнирам</h3>
+        <p>Специализированная программа перед соревнованиями: пик формы, тактика, ментальная готовность.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section class="section contact-section" id="contact">
+    <h2 class="section-title">ОСТАВЬ <span>ЗАЯВКУ</span></h2>
+    <p class="section-subtitle">Мы сохраним твои данные и свяжемся для подбора тренера или психолога</p>
+    
+    
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:28px;">
+      <a href="#" class="btn btn-primary" data-consult="wa"><i class="fab fa-whatsapp"></i> WhatsApp +998 90 826 05 75</a>
+      <a href="#" class="btn btn-outline" data-consult="ig"><i class="fab fa-instagram"></i> @A.M.P._company</a>
+    </div>
+
+    <form class="contact-form" id="contact-form">
+      <div class="form-group">
+        <label for="name">Имя *</label>
+        <input type="text" id="name" name="name" placeholder="Как тебя зовут?" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Gmail / Email *</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="whatsapp">WhatsApp</label>
+          <input type="text" id="whatsapp" name="whatsapp" placeholder="+7...">
+        </div>
+        <div class="form-group">
+          <label for="instagram">Instagram</label>
+          <input type="text" id="instagram" name="instagram" placeholder="@username">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+        <i class="fas fa-paper-plane"></i> Сохранить и отправить
+      </button>
+      <div class="form-success" id="form-success">
+        <i class="fas fa-check-circle"></i> Данные успешно сохранены! Мы скоро свяжемся с тобой.
+      </div>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">A.M.P.<span>company</span></div>
+    <p>Online coaches • Psychology • Martial arts</p>
+    <div class="socials">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-telegram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p class="copyright">© 2026 A.M.P.company. Все права защищены.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
 #Cache folder
 .alcache/
 #Symbols folder
@@ -19,5 +182,114 @@ rad.json
 #License-files
 *.bclicense
 *.flf
-#Test results file
+#Test results file<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Результаты — A.M.P.company</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-bolt"></i>
+        A.M.P.<span>company</span>
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="tournaments.html">Турниры</a></li>
+          <li><a href="results.html" class="active">Результаты</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Виды спорта <i class="fas fa-chevron-down" style="font-size:0.75rem;"></i></a>
+            <div class="dropdown-menu" id="sports-dropdown">
+              <!-- filled by JS -->
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="lang-switcher" id="lang-switcher"></div>
+      <div id="auth-area"></div>
+      <div class="burger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <h1>РЕЗУЛЬТАТЫ</h1>
+    <p>Результаты по всем видам единоборств и спортивной борьбы</p>
+  </div>
+
+  <section class="section" style="padding-top:20px;">
+    <!-- CHARTS -->
+    <div class="charts-row">
+      <div class="chart-card">
+        <h3><i class="fas fa-chart-bar" style="color:var(--accent);margin-right:8px;"></i> Турниры по видам спорта</h3>
+        <canvas id="chart-sports" height="220"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3><i class="fas fa-trophy" style="color:var(--accent);margin-right:8px;"></i> Победы клубов (футбол)</h3>
+        <canvas id="chart-wins" height="220"></canvas>
+      </div>
+    </div>
+
+    <!-- FILTERS -->
+    <div class="filters">
+      <div class="filter-group">
+        <label for="filter-sport-results">Вид спорта</label>
+        <select id="filter-sport-results" class="sport-select">
+          <option value="">Все виды единоборств</option>
+        </select>
+      </div>
+      <div class="filter-group" style="flex:0;min-width:auto;">
+        <label>&nbsp;</label>
+        <button class="btn btn-primary" id="search-results">
+          <i class="fas fa-search"></i> Применить фильтр
+        </button>
+      </div>
+    </div>
+
+    <!-- RESULTS TABLE -->
+    <div class="results-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Вид спорта</th>
+            <th>Турнир / Событие</th>
+            <th>Дата</th>
+            <th>Победитель</th>
+            <th>2 место</th>
+            <th>Счёт / Результат</th>
+          </tr>
+        </thead>
+        <tbody id="results-body">
+          <!-- filled by JS -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">A.M.P.<span>company</span></div>
+    <p>Online coaches • Psychology • Martial arts</p>
+    <div class="socials">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-telegram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p class="copyright">© 2026 A.M.P.company. Все права защищены.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
 TestResults.xml
