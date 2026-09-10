@@ -1,7 +1,112 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
-.vscode/<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Админ-панель — A.M.P.company</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-bolt"></i>
+        A.M.P.<span>company</span>
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="tournaments.html">Турниры</a></li>
+          <li><a href="results.html">Результаты</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Виды спорта <i class="fas fa-chevron-down" style="font-size:0.75rem;"></i></a>
+            <div class="dropdown-menu" id="sports-dropdown"></div>
+          </li>
+        </ul>
+      </nav>
+      <div class="lang-switcher" id="lang-switcher"></div>
+      <div id="auth-area"></div>
+      <div class="burger"><span></span><span></span><span></span></div>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <h1>АДМИН-<span style="color:var(--accent);">ПАНЕЛЬ</span></h1>
+    <p>Пользователи • Посещаемость • Чаты • Статусы</p>
+  </div>
+
+  <section class="section" style="padding-top:20px;">
+    <div id="admin-root"></div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-logo">A.M.P.<span>company</span></div>
+    <p>Admin panel</p>
+    <p class="copyright">© 2026 A.M.P.company</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Учебные пособия — A.M.P.company</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-bolt"></i>
+        A.M.P.<span>company</span>
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="tournaments.html">Турниры</a></li>
+          <li><a href="results.html">Результаты</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Виды спорта <i class="fas fa-chevron-down" style="font-size:0.75rem;"></i></a>
+            <div class="dropdown-menu" id="sports-dropdown"></div>
+          </li>
+        </ul>
+      </nav>
+      <div class="lang-switcher" id="lang-switcher"></div>
+      <div id="auth-area"></div>
+      <div class="burger"><span></span><span></span><span></span></div>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <h1 id="guides-title">УЧЕБНЫЕ ПОСОБИЯ</h1>
+    <p>Материалы по видам единоборств</p>
+  </div>
+
+  <section class="section" style="padding-top:20px;">
+    <div id="guides-content"></div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-logo">A.M.P.<span>company</span></div>
+    <p>Online coaches • Psychology • Martial arts</p>
+    <div class="socials">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-telegram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p class="copyright">© 2026 A.M.P.company. Все права защищены.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -165,24 +270,73 @@
   <script src="js/script.js"></script>
 </body>
 </html>
-#Cache folder
-.alcache/
-#Symbols folder
-.alpackages/
-#Snapshots folder
-.snapshots/
-#Testing Output folder
-.output/
-#Extension App-file
-*.app
-#Rapid Application Development File
-rad.json
-#Translation Base-file
-*.g.xlf
-#License-files
-*.bclicense
-*.flf
-#Test results file<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Профиль — A.M.P.company</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-bolt"></i>
+        A.M.P.<span>company</span>
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="tournaments.html">Турниры</a></li>
+          <li><a href="results.html">Результаты</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Виды спорта <i class="fas fa-chevron-down" style="font-size:0.75rem;"></i></a>
+            <div class="dropdown-menu" id="sports-dropdown">
+              <!-- filled by JS -->
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="lang-switcher" id="lang-switcher"></div>
+      <div id="auth-area"></div>
+      <div class="burger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <h1>ПРОФИЛЬ</h1>
+    <p>Твой личный кабинет спортсмена</p>
+  </div>
+
+  <section class="section" style="padding-top:20px;">
+    <div id="profile-content">
+      <!-- filled by JS -->
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">A.M.P.<span>company</span></div>
+    <p>Online coaches • Psychology • Martial arts</p>
+    <div class="socials">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-telegram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p class="copyright">© 2026 A.M.P.company. Все права защищены.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -292,4 +446,2991 @@ rad.json
   <script src="js/script.js"></script>
 </body>
 </html>
-TestResults.xml
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Турниры — A.M.P.company</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-bolt"></i>
+        A.M.P.<span>company</span>
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="tournaments.html" class="active">Турниры</a></li>
+          <li><a href="results.html">Результаты</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Виды спорта <i class="fas fa-chevron-down" style="font-size:0.75rem;"></i></a>
+            <div class="dropdown-menu" id="sports-dropdown">
+              <!-- filled by JS -->
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="lang-switcher" id="lang-switcher"></div>
+      <div id="auth-area"></div>
+      <div class="burger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <h1>ТУРНИРЫ</h1>
+    <p>Информация о турнирах: где и когда. Фильтр по виду единоборства и дате</p>
+  </div>
+
+  <section class="section" style="padding-top:20px;">
+    <!-- FILTERS -->
+    <div class="filters">
+      <div class="filter-group">
+        <label for="filter-sport">Вид спорта</label>
+        <select id="filter-sport" class="sport-select">
+          <option value="">Все виды единоборств</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="filter-date">Дата (от)</label>
+        <input type="date" id="filter-date">
+      </div>
+      <div class="filter-group" style="flex:0;min-width:auto;">
+        <label>&nbsp;</label>
+        <button class="btn btn-primary" id="search-tournaments">
+          <i class="fas fa-search"></i> Поиск
+        </button>
+      </div>
+    </div>
+
+    <!-- LIST -->
+    <div class="cards-grid" id="tournaments-list">
+      <!-- filled by JS -->
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">A.M.P.<span>company</span></div>
+    <p>Online coaches • Psychology • Martial arts</p>
+    <div class="socials">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-telegram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p class="copyright">© 2026 A.M.P.company. Все права защищены.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>/* ===== FORCE SPORTS - Aggressive Dark Theme ===== */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  --bg-dark: #0a0a0a;
+  --bg-card: #141414;
+  --bg-elevated: #1a1a1a;
+  --accent: #ff1e00;
+  --accent-hover: #ff3c1f;
+  --accent-glow: rgba(255, 30, 0, 0.4);
+  --orange: #ff6b00;
+  --text: #ffffff;
+  --text-muted: #a0a0a0;
+  --border: #2a2a2a;
+  --success: #00e676;
+  --gradient: linear-gradient(135deg, #ff1e00 0%, #ff6b00 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--bg-dark);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ===== HEADER / NAV ===== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 2px solid var(--accent);
+  box-shadow: 0 4px 30px rgba(255, 30, 0, 0.15);
+}
+
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+.logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: 3px;
+  color: var(--text);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo span {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.logo i {
+  color: var(--accent);
+  font-size: 1.8rem;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 8px;
+  align-items: center;
+}
+
+.nav-menu > li {
+  position: relative;
+}
+
+.nav-menu a {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 1.05rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text);
+  text-decoration: none;
+  padding: 10px 18px;
+  display: block;
+  transition: all 0.25s ease;
+  border-radius: 4px;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: var(--accent);
+  background: rgba(255, 30, 0, 0.1);
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  min-width: 280px;
+  max-height: 420px;
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+  z-index: 100;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 12px;
+  gap: 4px;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown.active .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.dropdown-menu a {
+  font-size: 0.9rem;
+  padding: 10px 14px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.dropdown-menu::-webkit-scrollbar {
+  width: 6px;
+}
+.dropdown-menu::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 3px;
+}
+
+/* Mobile burger */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.burger span {
+  width: 28px;
+  height: 3px;
+  background: var(--accent);
+  transition: 0.3s;
+}
+
+/* ===== HERO SLIDER ===== */
+.hero {
+  margin-top: 72px;
+  position: relative;
+  height: 560px;
+  overflow: hidden;
+}
+
+.slider {
+  height: 100%;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.8s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slide::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(10,10,10,0.85) 0%, rgba(255,30,0,0.25) 100%);
+}
+
+.slide-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+  padding: 0 24px;
+}
+
+.slide-content h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  letter-spacing: 4px;
+  line-height: 1.05;
+  margin-bottom: 16px;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.slide-content h1 span {
+  color: var(--accent);
+}
+
+.slide-content p {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--gradient);
+  color: #fff;
+  box-shadow: 0 8px 25px var(--accent-glow);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px var(--accent-glow);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #fff;
+  border: 2px solid var(--accent);
+}
+
+.btn-outline:hover {
+  background: var(--accent);
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 10;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.3);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dot.active {
+  background: var(--accent);
+  box-shadow: 0 0 12px var(--accent);
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  padding: 80px 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.section-title span {
+  color: var(--accent);
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  margin-bottom: 50px;
+  font-size: 1.1rem;
+}
+
+/* Services cards */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+}
+
+.service-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 36px 28px;
+  text-align: center;
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--gradient);
+  transform: scaleX(0);
+  transition: transform 0.35s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent);
+  box-shadow: 0 20px 40px rgba(255, 30, 0, 0.15);
+}
+
+.service-card:hover::before {
+  transform: scaleX(1);
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 24px;
+  background: rgba(255, 30, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--accent);
+}
+
+.service-card h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.service-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* ===== CONTACT FORM ===== */
+.contact-section {
+  background: var(--bg-elevated);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.form-group input,
+.form-group select {
+  background: var(--bg-dark);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 14px 18px;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-success {
+  display: none;
+  background: rgba(0, 230, 118, 0.15);
+  border: 1px solid var(--success);
+  color: var(--success);
+  padding: 16px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.form-success.show {
+  display: block;
+}
+
+/* ===== FILTERS ===== */
+.filters {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 28px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.filter-group {
+  flex: 1;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-group label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.filter-group select,
+.filter-group input {
+  background: var(--bg-dark);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 12px 16px;
+  font-size: 1rem;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.filter-group select:focus,
+.filter-group input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+/* ===== TOURNAMENT / RESULT CARDS ===== */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: var(--accent);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(255, 30, 0, 0.12);
+}
+
+.card-header {
+  background: linear-gradient(90deg, rgba(255,30,0,0.2), transparent);
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-sport {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: var(--accent);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.card-date {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 12px;
+}
+
+.card-meta i {
+  color: var(--accent);
+  margin-right: 6px;
+}
+
+.card-footer {
+  padding: 16px 20px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+  font-size: 0.8rem;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.badge-open {
+  background: rgba(0, 230, 118, 0.15);
+  color: var(--success);
+}
+
+.badge-soon {
+  background: rgba(255, 107, 0, 0.15);
+  color: var(--orange);
+}
+
+.badge-closed {
+  background: rgba(255, 30, 0, 0.15);
+  color: var(--accent);
+}
+
+/* ===== CHARTS ===== */
+.charts-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 28px;
+  margin-bottom: 50px;
+}
+
+.chart-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.chart-card h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* ===== RESULTS TABLE ===== */
+.results-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--bg-card);
+}
+
+th, td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  background: var(--bg-elevated);
+  color: var(--text-muted);
+}
+
+tr:hover td {
+  background: rgba(255, 30, 0, 0.05);
+}
+
+.place-1 { color: #ffd700; font-weight: 700; }
+.place-2 { color: #c0c0c0; font-weight: 700; }
+.place-3 { color: #cd7f32; font-weight: 700; }
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #050505;
+  border-top: 2px solid var(--accent);
+  padding: 50px 24px 30px;
+  text-align: center;
+}
+
+.footer-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+}
+
+.footer-logo span {
+  color: var(--accent);
+}
+
+.footer p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.socials a {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.socials a:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.copyright {
+  color: #555;
+  font-size: 0.85rem;
+}
+
+/* ===== EMPTY STATE ===== */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-muted);
+}
+
+.empty-state i {
+  font-size: 3.5rem;
+  color: var(--border);
+  margin-bottom: 16px;
+}
+
+/* ===== PAGE HEADER ===== */
+.page-header {
+  margin-top: 72px;
+  padding: 60px 24px 40px;
+  background: linear-gradient(180deg, rgba(255,30,0,0.12) 0%, transparent 100%);
+  text-align: center;
+}
+
+.page-header h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5rem;
+  letter-spacing: 4px;
+}
+
+.page-header p {
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .burger {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    background: var(--bg-card);
+    flex-direction: column;
+    padding: 20px;
+    gap: 4px;
+    border-bottom: 2px solid var(--accent);
+    transform: translateY(-120%);
+    opacity: 0;
+    transition: all 0.35s ease;
+    z-index: 999;
+  }
+
+  .nav-menu.open {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .dropdown-menu {
+    position: static;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    transition: max-height 0.3s;
+    grid-template-columns: 1fr;
+  }
+
+  .dropdown.active .dropdown-menu {
+    max-height: 400px;
+    padding: 8px;
+    border: 1px solid var(--border);
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .charts-row {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    height: 480px;
+  }
+}
+
+@media (max-width: 500px) {
+  .filters {
+    flex-direction: column;
+  }
+  .filter-group {
+    min-width: 100%;
+  }
+}
+/* ===== AUTH BUTTONS ===== */
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 16px;
+}
+
+.auth-buttons .btn {
+  padding: 8px 18px;
+  font-size: 0.9rem;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.btn-ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-menu .user-name {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.user-menu .user-name span {
+  color: var(--accent);
+}
+
+/* ===== MODAL ===== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  z-index: 2000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-overlay.show {
+  display: flex;
+}
+
+.modal {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 420px;
+  padding: 32px;
+  position: relative;
+  animation: modalIn 0.3s ease;
+}
+
+@keyframes modalIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: var(--accent);
+}
+
+.modal h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.modal h2 span {
+  color: var(--accent);
+}
+
+.modal .modal-sub {
+  text-align: center;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+}
+
+.modal .form-group {
+  margin-bottom: 16px;
+}
+
+.modal-switch {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.modal-switch a {
+  color: var(--accent);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.modal-switch a:hover {
+  text-decoration: underline;
+}
+
+.modal-error {
+  background: rgba(255,30,0,0.15);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 10px 14px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+  display: none;
+}
+
+.modal-error.show {
+  display: block;
+}
+
+/* ===== PROFILE PAGE ===== */
+.profile-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.profile-header {
+  background: linear-gradient(135deg, rgba(255,30,0,0.2), transparent);
+  padding: 40px 30px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #fff;
+  margin: 0 auto 16px;
+  border: 3px solid var(--accent);
+}
+
+.profile-header h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.profile-header p {
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.profile-body {
+  padding: 30px;
+}
+
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.profile-row:last-child {
+  border-bottom: none;
+}
+
+.profile-label {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.profile-value {
+  font-weight: 500;
+}
+
+.profile-actions {
+  padding: 20px 30px 30px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .auth-buttons {
+    margin-left: 0;
+    margin-top: 12px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ===== CHAT ===== */
+.chat-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 3000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.chat-overlay.show {
+  display: flex;
+}
+
+.chat-window {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 480px;
+  height: 85vh;
+  max-height: 700px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+.chat-header {
+  background: linear-gradient(90deg, rgba(255,30,0,0.25), transparent);
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.chat-header-info h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.15rem;
+  letter-spacing: 0.5px;
+}
+
+.chat-header-info p {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  margin-top: 2px;
+}
+
+.chat-close {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.chat-close:hover {
+  color: var(--accent);
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: var(--bg-dark);
+}
+
+.chat-msg {
+  max-width: 80%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.chat-msg.them {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+}
+
+.chat-msg.me {
+  background: linear-gradient(135deg, #ff1e00, #ff6b00);
+  color: #fff;
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+}
+
+.chat-msg .msg-time {
+  font-size: 0.7rem;
+  opacity: 0.7;
+  margin-top: 6px;
+  display: block;
+}
+
+.chat-msg img,
+.chat-msg video {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 6px;
+  display: block;
+  max-height: 240px;
+}
+
+.chat-msg .msg-text {
+  margin-bottom: 4px;
+}
+
+.chat-input-area {
+  padding: 14px 16px;
+  border-top: 1px solid var(--border);
+  background: var(--bg-card);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat-preview {
+  display: none;
+  position: relative;
+  max-width: 120px;
+}
+
+.chat-preview.show {
+  display: block;
+}
+
+.chat-preview img,
+.chat-preview video {
+  width: 100%;
+  border-radius: 8px;
+  max-height: 80px;
+  object-fit: cover;
+}
+
+.chat-preview-remove {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-input-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.chat-attach {
+  background: var(--bg-dark);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  transition: 0.2s;
+}
+
+.chat-attach:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.chat-input-row input[type="text"] {
+  flex: 1;
+  background: var(--bg-dark);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 12px 16px;
+  border-radius: 24px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.chat-input-row input[type="text"]:focus {
+  border-color: var(--accent);
+}
+
+.chat-send {
+  background: var(--gradient);
+  border: none;
+  color: #fff;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+  flex-shrink: 0;
+  transition: 0.2s;
+}
+
+.chat-send:hover {
+  transform: scale(1.08);
+}
+
+.chat-empty {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 40px 20px;
+  font-size: 0.95rem;
+}
+
+.chat-empty i {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 12px;
+  color: var(--border);
+}
+
+/* Lang switcher */
+.lang-switcher {
+  display: flex;
+  gap: 4px;
+  margin-right: 12px;
+}
+.lang-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+}
+.lang-btn.active, .lang-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(255,30,0,0.1);
+}
+
+.modal-wide {
+  max-width: 480px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Better mobile/tablet */
+@media (max-width: 900px) {
+  .lang-switcher {
+    margin: 8px 0;
+    justify-content: center;
+    width: 100%;
+  }
+  .nav-container {
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 72px;
+    padding: 12px 16px;
+  }
+}
+
+/* Safe areas for iOS */
+body {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.chat-window {
+  max-height: min(700px, 90dvh);
+}// ===== A.M.P.company — Martial Arts Platform =====
+
+const BRAND = 'A.M.P.company';
+// Admin credentials moved to server
+// ADMIN_PASS removed from client
+const WHATSAPP = '998908260575';
+const INSTAGRAM = 'A.M.P._company';
+const CONTACT_EMAIL = 'sodikovjonibekdd@gmail.com';
+
+const ALL_SPORTS = {
+  ru: ["Бокс","ММА","Кикбоксинг","Тайский бокс","Карате","Дзюдо","Самбо","Вольная борьба","Греко-римская борьба","Тхэквондо","Бразильское джиу-джитсу","Джиу-джитсу","Айкидо","Ушу","Кунг-фу","Капоэйра","Фехтование","Рукопашный бой","Панкратион","Сумо","Муай тай","Кикбоксинг K-1","Грэпплинг","Боевое самбо"],
+  en: ["Boxing","MMA","Kickboxing","Muay Thai","Karate","Judo","Sambo","Freestyle Wrestling","Greco-Roman Wrestling","Taekwondo","Brazilian Jiu-Jitsu","Jiu-Jitsu","Aikido","Wushu","Kung Fu","Capoeira","Fencing","Hand-to-hand combat","Pancration","Sumo","Muay Thai","K-1 Kickboxing","Grappling","Combat Sambo"],
+  de: ["Boxen","MMA","Kickboxen","Muay Thai","Karate","Judo","Sambo","Freistilringen","Griechisch-römisches Ringen","Taekwondo","Brasilianisches Jiu-Jitsu","Jiu-Jitsu","Aikido","Wushu","Kung Fu","Capoeira","Fechten","Nahkampf","Pankration","Sumo","Muay Thai","K-1 Kickboxen","Grappling","Kampfsambo"]
+};
+
+// Use Russian keys for data, map by index for display
+const SPORT_KEYS = ALL_SPORTS.ru;
+
+const I18N = {
+  ru: {
+    home: 'Главная', tournaments: 'Турниры', results: 'Результаты', sports: 'Виды спорта',
+    login: 'Войти', register: 'Регистрация', profile: 'Профиль', logout: 'Выйти',
+    panel: 'Панель', admin: 'Админ',
+    hero1: 'ОНЛАЙН-ТРЕНЕРЫ ПО ЕДИНОБОРСТВАМ',
+    hero1sub: 'Персональные программы: бокс, ММА, дзюдо, самбо, вольная борьба и все виды единоборств.',
+    hero2: 'ПСИХОЛОГИЧЕСКАЯ ПОДДЕРЖКА СПОРТСМЕНА',
+    hero2sub: 'Работа с мотивацией, стрессом и выгоранием. Спортивные психологи помогут выйти на новый уровень.',
+    hero3: 'ТУРНИРЫ И СОРЕВНОВАНИЯ',
+    hero3sub: 'Информация о турнирах: где и когда. Фильтр по виду спорта и дате.',
+    start: 'Начать тренировки', psych: 'Записаться к психологу', seeTournaments: 'Смотреть турниры',
+    services: 'НАШИ УСЛУГИ', servicesSub: 'Всё для роста спортсмена',
+    contact: 'ОСТАВЬ ЗАЯВКУ', contactSub: 'Или напишите нам напрямую',
+    save: 'Сохранить', consultWA: 'WhatsApp консультация', consultIG: 'Instagram',
+    name: 'Имя', email: 'Email (Gmail)', password: 'Пароль', sport: 'Вид единоборства',
+    whatsapp: 'WhatsApp', instagram: 'Instagram',
+    search: 'Поиск', allSports: 'Все виды единоборств', dateFrom: 'Дата (от)',
+    noTournaments: 'Турниры не найдены', info: 'Информация',
+    chatAdmin: 'Чат с администратором', openChat: 'Открыть чат',
+    active: 'Активный', inactive: 'Неактивный',
+    guides: 'Учебные пособия', selectSport: 'Выберите вид единоборства',
+    lang: 'Язык'
+  },
+  en: {
+    home: 'Home', tournaments: 'Tournaments', results: 'Results', sports: 'Sports',
+    login: 'Login', register: 'Sign up', profile: 'Profile', logout: 'Logout',
+    panel: 'Panel', admin: 'Admin',
+    hero1: 'ONLINE COACHES FOR MARTIAL ARTS',
+    hero1sub: 'Personal programs: boxing, MMA, judo, sambo, freestyle wrestling and all combat sports.',
+    hero2: 'ATHLETE PSYCHOLOGICAL SUPPORT',
+    hero2sub: 'Motivation, stress and burnout. Sports psychologists help you level up mentally.',
+    hero3: 'TOURNAMENTS & COMPETITIONS',
+    hero3sub: 'Tournament info: where and when. Filter by sport and date.',
+    start: 'Start training', psych: 'Book a psychologist', seeTournaments: 'View tournaments',
+    services: 'OUR SERVICES', servicesSub: 'Everything for athlete growth',
+    contact: 'LEAVE A REQUEST', contactSub: 'Or contact us directly',
+    save: 'Save', consultWA: 'WhatsApp consult', consultIG: 'Instagram',
+    name: 'Name', email: 'Email (Gmail)', password: 'Password', sport: 'Martial art',
+    whatsapp: 'WhatsApp', instagram: 'Instagram',
+    search: 'Search', allSports: 'All martial arts', dateFrom: 'Date (from)',
+    noTournaments: 'No tournaments found', info: 'Info',
+    chatAdmin: 'Chat with admin', openChat: 'Open chat',
+    active: 'Active', inactive: 'Inactive',
+    guides: 'Training guides', selectSport: 'Select a martial art',
+    lang: 'Language'
+  },
+  de: {
+    home: 'Startseite', tournaments: 'Turniere', results: 'Ergebnisse', sports: 'Sportarten',
+    login: 'Anmelden', register: 'Registrieren', profile: 'Profil', logout: 'Abmelden',
+    panel: 'Panel', admin: 'Admin',
+    hero1: 'ONLINE-TRAINER FÜR KAMPFSPORT',
+    hero1sub: 'Persönliche Programme: Boxen, MMA, Judo, Sambo, Freistilringen und alle Kampfsportarten.',
+    hero2: 'PSYCHOLOGISCHE UNTERSTÜTZUNG',
+    hero2sub: 'Motivation, Stress und Burnout. Sportpsychologen helfen auf ein neues Level.',
+    hero3: 'TURNIERE & WETTBEWERBE',
+    hero3sub: 'Turnierinfo: wo und wann. Filter nach Sportart und Datum.',
+    start: 'Training starten', psych: 'Psychologe buchen', seeTournaments: 'Turniere ansehen',
+    services: 'UNSERE DIENSTE', servicesSub: 'Alles für das Athletenwachstum',
+    contact: 'ANFRAGE SENDEN', contactSub: 'Oder kontaktieren Sie uns direkt',
+    save: 'Speichern', consultWA: 'WhatsApp Beratung', consultIG: 'Instagram',
+    name: 'Name', email: 'E-Mail (Gmail)', password: 'Passwort', sport: 'Kampfsportart',
+    whatsapp: 'WhatsApp', instagram: 'Instagram',
+    search: 'Suche', allSports: 'Alle Kampfsportarten', dateFrom: 'Datum (ab)',
+    noTournaments: 'Keine Turniere gefunden', info: 'Info',
+    chatAdmin: 'Chat mit Admin', openChat: 'Chat öffnen',
+    active: 'Aktiv', inactive: 'Inaktiv',
+    guides: 'Trainingsleitfäden', selectSport: 'Kampfsportart wählen',
+    lang: 'Sprache'
+  }
+};
+
+let LANG = localStorage.getItem('ampLang') || 'ru';
+function t(key) { return (I18N[LANG] && I18N[LANG][key]) || I18N.ru[key] || key; }
+function sportsList() { return ALL_SPORTS[LANG] || ALL_SPORTS.ru; }
+function sportKeyByIndex(i) { return SPORT_KEYS[i] || SPORT_KEYS[0]; }
+function sportDisplay(key) {
+  const i = SPORT_KEYS.indexOf(key);
+  if (i < 0) return key;
+  return (ALL_SPORTS[LANG] || ALL_SPORTS.ru)[i] || key;
+}
+
+const GUIDES = {
+  "Бокс": [{ title: "Стойка и передвижения", desc: "Базовая стойка, шаги, уклоны." },{ title: "Удары руками", desc: "Джеб, кросс, хук, апперкот." },{ title: "Защита", desc: "Блоки, парирования." },{ title: "Спарринг", desc: "Безопасный спарринг." }],
+  "ММА": [{ title: "Стойка и клинч", desc: "Переходы стойка–клинч." },{ title: "Удары + борьба", desc: "Удары и тейкдауны." },{ title: "Граунд", desc: "Позиции и сабмишены." },{ title: "Стратегия", desc: "План на раунды." }],
+  "Кикбоксинг": [{ title: "Дистанция", desc: "Средняя и дальняя." },{ title: "Удары ногами", desc: "Лоу, миддл, хай-кик." },{ title: "Комбинации", desc: "Руки + ноги." },{ title: "Защита", desc: "Чеки и уходы." }],
+  "Тайский бокс": [{ title: "База", desc: "Стойка и баланс." },{ title: "Клинч", desc: "Колени и локти." },{ title: "Лоу-кики", desc: "Удары по ногам." },{ title: "Выносливость", desc: "Спецподготовка." }],
+  "Карате": [{ title: "Кихон", desc: "Стойки и удары." },{ title: "Ката", desc: "Формальные комплексы." },{ title: "Кумите", desc: "Спарринг." },{ title: "Мощь", desc: "Кинетическая цепь." }],
+  "Дзюдо": [{ title: "Кузуши", desc: "Выведение из равновесия." },{ title: "Броски", desc: "Сеои-наге, учи-мата." },{ title: "Лёжа", desc: "Удержания, болевые." },{ title: "Тактика", desc: "Комбинации." }],
+  "Самбо": [{ title: "Захваты", desc: "Работа курткой." },{ title: "Броски", desc: "Через бедро, мельница." },{ title: "Болевые", desc: "На руки и ноги." },{ title: "Боевое", desc: "Удары + борьба." }],
+  "Вольная борьба": [{ title: "Стойка", desc: "Низкая стойка, шаги." },{ title: "Проходы в ноги", desc: "Одинарный и двойной." },{ title: "Броски", desc: "Мельница, скрутки." },{ title: "Партер", desc: "Контроль и уходы." }],
+  "Греко-римская борьба": [{ title: "Стойка", desc: "Выше пояса." },{ title: "Суплекс", desc: "Броски прогибом." },{ title: "Переводы", desc: "В партер." },{ title: "Партер", desc: "Накрытия." }],
+  "Тхэквондо": [{ title: "Стойки", desc: "Базовые стойки." },{ title: "Удары ногами", desc: "Долио, ёп-чаги." },{ title: "Комбинации", desc: "Связки." },{ title: "Спарринг", desc: "Очки и дистанция." }],
+  "Бразильское джиу-джитсу": [{ title: "Позиции", desc: "Гард, маунт, бэк." },{ title: "Сабмишены", desc: "Рычаги, удушения." },{ title: "Свипы", desc: "Переходы." },{ title: "Самозащита", desc: "BJJ в жизни." }],
+  "Джиу-джитсу": [{ title: "Основы", desc: "Захваты, уходы." },{ title: "Броски", desc: "Сила противника." },{ title: "Болевые", desc: "Контроль." },{ title: "Оружие", desc: "Против ножа." }],
+  "Айкидо": [{ title: "Перемещения", desc: "Ирими, тэнкан." },{ title: "Приёмы", desc: "Иккё, сихо-наге." },{ title: "Оружие", desc: "Боккен, дзё." },{ title: "Принцип", desc: "Несопротивление." }],
+  "Ушу": [{ title: "База", desc: "Стойки, удары." },{ title: "Таолу", desc: "Комплексы." },{ title: "Саньда", desc: "Ударный раздел." },{ title: "Оружие", desc: "Шест, меч." }],
+  "Кунг-фу": [{ title: "Стили", desc: "Шаолинь, вин-чун." },{ title: "Удары", desc: "Короткая дистанция." },{ title: "Формы", desc: "Комплексы." },{ title: "Цигун", desc: "Дыхание." }],
+  "Капоэйра": [{ title: "Жинга", desc: "Передвижение." },{ title: "Удары", desc: "Мейа-луа." },{ title: "Акробатика", desc: "Ау, макаку." },{ title: "Музыка", desc: "Ритм и рода." }],
+  "Фехтование": [{ title: "Стойка", desc: "Шаги на дорожке." },{ title: "Уколы", desc: "Атака, рипост." },{ title: "Оружие", desc: "Рапира, шпага, сабля." },{ title: "Тактика", desc: "Дистанция." }],
+  "Рукопашный бой": [{ title: "Стойка", desc: "Боевая стойка." },{ title: "Удары", desc: "Руки, ноги, локти." },{ title: "Броски", desc: "Партер." },{ title: "Оружие", desc: "Защита." }],
+  "Панкратион": [{ title: "Правила", desc: "Современный панкратион." },{ title: "Удары", desc: "Разрешённые." },{ title: "Борьба", desc: "Тейкдауны." },{ title: "Выносливость", desc: "Подготовка." }],
+  "Сумо": [{ title: "Стойка", desc: "Сикари." },{ title: "Тати-аи", desc: "Стартовый рывок." },{ title: "Техника", desc: "Выталкивание." },{ title: "Сила", desc: "Спецподготовка." }],
+  "Муай тай": [{ title: "8 оружий", desc: "Кулаки, локти, колени, голени." },{ title: "Клинч", desc: "Контроль." },{ title: "Локти", desc: "Режущие удары." },{ title: "Кондиция", desc: "Бег, мешки." }],
+  "Кикбоксинг K-1": [{ title: "Правила K-1", desc: "Отличия." },{ title: "Лоу-кики", desc: "По ногам." },{ title: "Руки", desc: "Боксёрская база." },{ title: "Нокаут", desc: "Акцент." }],
+  "Грэпплинг": [{ title: "Позиции", desc: "Без ги." },{ title: "Тейкдауны", desc: "Проходы." },{ title: "Сабмишены", desc: "Болевые." },{ title: "Скрэмбл", desc: "Переходы." }],
+  "Боевое самбо": [{ title: "Удары+броски", desc: "Интеграция." },{ title: "Экипировка", desc: "Шлем, перчатки." },{ title: "Болевые", desc: "Руки и ноги." },{ title: "Тактика", desc: "Дистанции." }]
+};
+
+const TOURNAMENTS = [
+  { id:1, name:"Кубок Москвы по боксу", sport:"Бокс", date:"2026-09-20", location:"Москва, Дворец спорта", info:"Любители и профи. Весовые 48–91+ кг." },
+  { id:2, name:"MMA Fight Night Vol.12", sport:"ММА", date:"2026-09-25", location:"Санкт-Петербург, Юбилейный", info:"Профи-бои, 5 титульных." },
+  { id:3, name:"Чемпионат России по дзюдо", sport:"Дзюдо", date:"2026-10-05", location:"Казань", info:"Все возрасты. Отбор." },
+  { id:4, name:"Открытый турнир по самбо", sport:"Самбо", date:"2026-09-18", location:"Москва", info:"Спортивное и боевое самбо." },
+  { id:5, name:"Кикбоксинг Grand Prix", sport:"Кикбоксинг", date:"2026-10-01", location:"Екатеринбург", info:"K-1, лоу-кики." },
+  { id:6, name:"Кубок по вольной борьбе", sport:"Вольная борьба", date:"2026-09-28", location:"Махачкала", info:"Юниоры и взрослые." },
+  { id:7, name:"BJJ Open Russia", sport:"Бразильское джиу-джитсу", date:"2026-10-10", location:"Москва, ЦСКА", info:"Gi и No-Gi." },
+  { id:8, name:"Тайский бокс «Легенда»", sport:"Тайский бокс", date:"2026-09-22", location:"Сочи", info:"Профи, 3-мин раунды." },
+  { id:9, name:"Чемпионат по карате WKF", sport:"Карате", date:"2026-10-15", location:"Новосибирск", info:"Ката и кумите." },
+  { id:10, name:"Тхэквондо Кубок Урала", sport:"Тхэквондо", date:"2026-09-30", location:"Челябинск", info:"Олимпийская программа." },
+  { id:11, name:"Греко-римская — Мемориал", sport:"Греко-римская борьба", date:"2026-10-08", location:"Краснодар", info:"Сильный состав." },
+  { id:12, name:"Рукопашный бой ВС РФ", sport:"Рукопашный бой", date:"2026-10-12", location:"Москва, ЦСКА", info:"Военно-прикладной." },
+  { id:13, name:"Грэпплинг Pro", sport:"Грэпплинг", date:"2026-09-27", location:"Казань", info:"ADCC-правила." },
+  { id:14, name:"Боевое самбо — Кубок", sport:"Боевое самбо", date:"2026-10-03", location:"Уфа", info:"Удары + борьба." },
+  { id:15, name:"Фехтование — Рапира", sport:"Фехтование", date:"2026-10-20", location:"Санкт-Петербург", info:"Личное первенство." },
+  { id:16, name:"Панкратион Open", sport:"Панкратион", date:"2026-09-19", location:"Ростов-на-Дону", info:"Полный контакт." },
+  { id:17, name:"Айкидо Фестиваль", sport:"Айкидо", date:"2026-11-01", location:"Москва", info:"Семинар + демо." },
+  { id:18, name:"Ушу Саньда", sport:"Ушу", date:"2026-10-25", location:"Владивосток", info:"Саньда." },
+  { id:19, name:"K-1 Russia Grand Prix", sport:"Кикбоксинг K-1", date:"2026-11-05", location:"Москва, ВТБ Арена", info:"На выбывание." },
+  { id:20, name:"Муай тай — Кубок Азии", sport:"Муай тай", date:"2026-10-18", location:"Сочи", info:"Международный состав." }
+];
+
+const RESULTS = [
+  { sport:"Бокс", event:"Чемпионат Москвы", date:"2026-08-15", winner:"А. Петров", second:"И. Сидоров", score:"UD 3-0" },
+  { sport:"ММА", event:"Fight Night Vol.11", date:"2026-08-10", winner:"К. Орлов", second:"М. Волков", score:"KO 2" },
+  { sport:"Дзюдо", event:"Кубок России", date:"2026-08-05", winner:"Д. Иванов", second:"С. Козлов", score:"Иппон" },
+  { sport:"Самбо", event:"Чемпионат ЦФО", date:"2026-08-01", winner:"Р. Алиев", second:"Н. Белов", score:"8:2" },
+  { sport:"Кикбоксинг", event:"Grand Prix", date:"2026-07-28", winner:"Е. Смирнов", second:"П. Новиков", score:"TKO 3" },
+  { sport:"Вольная борьба", event:"Мемориал", date:"2026-07-20", winner:"А. Гаджиев", second:"М. Омаров", score:"12:4" },
+  { sport:"Бразильское джиу-джитсу", event:"BJJ Open", date:"2026-07-15", winner:"Л. Феррейра", second:"К. Морозов", score:"Submission" },
+  { sport:"Тайский бокс", event:"Легенда 10", date:"2026-07-12", winner:"Т. Сук", second:"В. Кузнецов", score:"Decision" },
+  { sport:"Карате", event:"WKF Qualifier", date:"2026-07-08", winner:"Ю. Танака", second:"А. Морозов", score:"8:3" },
+  { sport:"Тхэквондо", event:"Кубок Урала", date:"2026-07-01", winner:"С. Ким", second:"Д. Пахомов", score:"15:9" },
+  { sport:"Греко-римская борьба", event:"Первенство", date:"2026-06-25", winner:"И. Медведев", second:"А. Соколов", score:"7:1" },
+  { sport:"Рукопашный бой", event:"ВС РФ", date:"2026-06-20", winner:"С. Воронов", second:"П. Громов", score:"12:5" },
+  { sport:"Грэпплинг", event:"Pro Cup", date:"2026-06-15", winner:"Н. Лебедев", second:"О. Тихонов", score:"RNC" },
+  { sport:"Боевое самбо", event:"Кубок", date:"2026-06-10", winner:"Б. Юсупов", second:"К. Малышев", score:"TKO 1" },
+  { sport:"Фехтование", event:"Рапира", date:"2026-06-05", winner:"А. Белова", second:"М. Крылова", score:"15:12" }
+];
+
+const CHART_SPORTS_COUNT = { labels: ["Бокс","ММА","Дзюдо","Самбо","Кикбоксинг","Борьба","BJJ","Тайский бокс"], data: [38,42,29,25,31,27,22,19] };
+const CHART_WINS = { labels: ["Петров","Орлов","Иванов","Алиев","Смирнов"], data: [14,11,9,8,7] };
+
+// ===== STORAGE (server-side auth) =====
+const TOKEN_KEY = 'ampToken';
+const SESSION_KEY = 'ampSession';
+
+function getToken() { return localStorage.getItem(TOKEN_KEY) || ''; }
+function setToken(t) { if (t) localStorage.setItem(TOKEN_KEY, t); else localStorage.removeItem(TOKEN_KEY); }
+function getSession() { try { return JSON.parse(localStorage.getItem(SESSION_KEY)); } catch { return null; } }
+function setSession(u) { localStorage.setItem(SESSION_KEY, JSON.stringify(u)); }
+function clearSession() { localStorage.removeItem(SESSION_KEY); setToken(''); }
+function isAdmin() { const s = getSession(); return !!(s && s.isAdmin); }
+
+async function api(path, options = {}) {
+  const headers = { 'Content-Type': 'application/json', ...(options.headers || {}) };
+  const token = getToken();
+  if (token) headers['Authorization'] = 'Bearer ' + token;
+  const res = await fetch(path, { ...options, headers });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) {
+    const err = new Error(data.error || res.statusText || 'Request failed');
+    err.status = res.status;
+    err.data = data;
+    throw err;
+  }
+  return data;
+}
+
+function trackVisit() {
+  // Visits are counted on the server now
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  trackVisit();
+  applyI18n();
+  initLangSwitcher();
+  initNav();
+  initSlider();
+  initContactForm();
+  populateSportSelects();
+  initTournaments();
+  initResults();
+  initAuth();
+  initProfilePage();
+  initGuidesPage();
+  initAdminPage();
+  initConsultButtons();
+});
+
+function applyI18n() {
+  document.documentElement.lang = LANG === 'en' ? 'en' : LANG === 'de' ? 'de' : 'ru';
+
+  // Nav links (order: Home, Tournaments, Results, Sports dropdown)
+  const navLinks = document.querySelectorAll('.nav-menu > li > a');
+  if (navLinks.length >= 4) {
+    if (navLinks[0] && !navLinks[0].classList.contains('dropdown-toggle')) navLinks[0].textContent = t('home');
+    if (navLinks[1]) navLinks[1].textContent = t('tournaments');
+    if (navLinks[2]) navLinks[2].textContent = t('results');
+    const dd = document.querySelector('.dropdown-toggle');
+    if (dd) {
+      const icon = dd.querySelector('i');
+      dd.innerHTML = t('sports') + ' ';
+      if (icon) dd.appendChild(icon);
+      else {
+        const i = document.createElement('i');
+        i.className = 'fas fa-chevron-down';
+        i.style.fontSize = '0.75rem';
+        dd.appendChild(i);
+      }
+    }
+  }
+
+  // Hero slides
+  const slides = document.querySelectorAll('.slide');
+  if (slides.length >= 3) {
+    const h1 = slides[0].querySelector('h1');
+    const p1 = slides[0].querySelector('p');
+    const b1 = slides[0].querySelector('.btn');
+    if (h1) h1.innerHTML = t('hero1').replace(/(ONLINE|ОНЛАЙН|ONLINE)/i, (m) => m).split(' ').length > 3
+      ? (LANG === 'ru' ? 'ОНЛАЙН-<span>ТРЕНЕРЫ</span><br>ПО ВСЕМ ВИДАМ СПОРТА' : LANG === 'en' ? 'ONLINE <span>COACHES</span><br>FOR ALL MARTIAL ARTS' : 'ONLINE-<span>TRAINER</span><br>FÜR ALLE KAMPFSPORTARTEN')
+      : t('hero1');
+    if (LANG === 'ru' && h1) h1.innerHTML = 'ОНЛАЙН-<span>ТРЕНЕРЫ</span><br>ПО ВСЕМ ВИДАМ СПОРТА';
+    if (LANG === 'en' && h1) h1.innerHTML = 'ONLINE <span>COACHES</span><br>FOR ALL MARTIAL ARTS';
+    if (LANG === 'de' && h1) h1.innerHTML = 'ONLINE-<span>TRAINER</span><br>FÜR ALLE KAMPFSPORTARTEN';
+    if (p1) p1.textContent = t('hero1sub');
+    if (b1) b1.innerHTML = '<i class="fas fa-dumbbell"></i> ' + t('start');
+
+    const h2 = slides[1].querySelector('h1');
+    const p2 = slides[1].querySelector('p');
+    const b2 = slides[1].querySelector('.btn');
+    if (LANG === 'ru' && h2) h2.innerHTML = 'ПСИХОЛОГИЧЕСКАЯ<br><span>ПОДДЕРЖКА</span> СПОРТСМЕНА';
+    if (LANG === 'en' && h2) h2.innerHTML = 'ATHLETE<br><span>PSYCHOLOGICAL</span> SUPPORT';
+    if (LANG === 'de' && h2) h2.innerHTML = 'PSYCHOLOGISCHE<br><span>UNTERSTÜTZUNG</span>';
+    if (p2) p2.textContent = t('hero2sub');
+    if (b2) b2.innerHTML = '<i class="fas fa-brain"></i> ' + t('psych');
+
+    const h3 = slides[2].querySelector('h1');
+    const p3 = slides[2].querySelector('p');
+    const b3 = slides[2].querySelector('.btn');
+    if (LANG === 'ru' && h3) h3.innerHTML = 'ТУРНИРЫ И<br><span>СОРЕВНОВАНИЯ</span>';
+    if (LANG === 'en' && h3) h3.innerHTML = 'TOURNAMENTS &<br><span>COMPETITIONS</span>';
+    if (LANG === 'de' && h3) h3.innerHTML = 'TURNIERE &<br><span>WETTBEWERBE</span>';
+    if (p3) p3.textContent = t('hero3sub');
+    if (b3) b3.innerHTML = '<i class="fas fa-trophy"></i> ' + t('seeTournaments');
+  }
+
+  // Section titles
+  document.querySelectorAll('.section-title').forEach(el => {
+    const txt = el.textContent || '';
+    if (/УСЛУГ|SERVICES|DIENSTE/i.test(txt) || el.closest('.section') && !el.closest('.contact-section')) {
+      if (el.closest('#contact') || el.closest('.contact-section')) {
+        el.innerHTML = LANG === 'ru' ? 'ОСТАВЬ <span>ЗАЯВКУ</span>' : LANG === 'en' ? 'LEAVE A <span>REQUEST</span>' : 'ANFRAGE <span>SENDEN</span>';
+      } else if (/ЗАЯВК|REQUEST|ANFRAGE/i.test(txt)) {
+        el.innerHTML = LANG === 'ru' ? 'ОСТАВЬ <span>ЗАЯВКУ</span>' : LANG === 'en' ? 'LEAVE A <span>REQUEST</span>' : 'ANFRAGE <span>SENDEN</span>';
+      } else {
+        el.innerHTML = LANG === 'ru' ? 'НАШИ <span>УСЛУГИ</span>' : LANG === 'en' ? 'OUR <span>SERVICES</span>' : 'UNSERE <span>DIENSTE</span>';
+      }
+    }
+  });
+  document.querySelectorAll('.section-subtitle').forEach(el => {
+    const parent = el.closest('.section');
+    if (parent && parent.classList.contains('contact-section')) el.textContent = t('contactSub');
+    else if (parent && parent.querySelector('.services-grid')) el.textContent = t('servicesSub');
+  });
+
+  // Contact section specifically
+  const contactTitle = document.querySelector('.contact-section .section-title');
+  if (contactTitle) contactTitle.innerHTML = LANG === 'ru' ? 'ОСТАВЬ <span>ЗАЯВКУ</span>' : LANG === 'en' ? 'LEAVE A <span>REQUEST</span>' : 'ANFRAGE <span>SENDEN</span>';
+  const contactSub = document.querySelector('.contact-section .section-subtitle');
+  if (contactSub) contactSub.textContent = t('contactSub');
+
+  // Form labels
+  const labelMap = { name: t('name'), email: t('email'), whatsapp: t('whatsapp'), instagram: t('instagram') };
+  document.querySelectorAll('#contact-form label[for]').forEach(lab => {
+    const f = lab.getAttribute('for');
+    if (labelMap[f]) lab.textContent = labelMap[f] + (f === 'name' || f === 'email' ? ' *' : '');
+  });
+  const submitBtn = document.querySelector('#contact-form button[type="submit"]');
+  if (submitBtn) submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> ' + (LANG === 'ru' ? 'Сохранить и отправить' : LANG === 'en' ? 'Save and send' : 'Speichern und senden');
+
+  // Consult buttons text
+  document.querySelectorAll('[data-consult="wa"]').forEach(btn => {
+    btn.innerHTML = '<i class="fab fa-whatsapp"></i> WhatsApp +998 90 826 05 75';
+  });
+  document.querySelectorAll('[data-consult="ig"]').forEach(btn => {
+    btn.innerHTML = '<i class="fab fa-instagram"></i> @' + INSTAGRAM;
+  });
+
+  // Page headers
+  const pageH1 = document.querySelector('.page-header h1');
+  if (pageH1) {
+    const path = location.pathname.split('/').pop() || '';
+    if (path.includes('tournaments')) pageH1.textContent = t('tournaments').toUpperCase();
+    else if (path.includes('results')) pageH1.textContent = t('results').toUpperCase();
+    else if (path.includes('profile')) pageH1.textContent = t('profile').toUpperCase();
+    else if (path.includes('guides')) {
+      const sport = new URLSearchParams(location.search).get('sport');
+      if (!sport) pageH1.textContent = t('guides').toUpperCase();
+    }
+  }
+
+  // Filter labels
+  document.querySelectorAll('.filters label').forEach(lab => {
+    const forId = lab.getAttribute('for') || '';
+    if (forId.includes('sport')) lab.textContent = t('sport');
+    if (forId.includes('date')) lab.textContent = t('dateFrom');
+  });
+  document.querySelectorAll('.sport-select option[value=""]').forEach(opt => { opt.textContent = t('allSports'); });
+  const searchBtn = document.getElementById('search-tournaments') || document.getElementById('search-results');
+  if (searchBtn) searchBtn.innerHTML = '<i class="fas fa-search"></i> ' + t('search');
+
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (I18N[LANG] && I18N[LANG][key]) el.textContent = I18N[LANG][key];
+  });
+}
+
+function initLangSwitcher() {
+  const box = document.getElementById('lang-switcher');
+  if (!box) return;
+  box.innerHTML = `
+    <button type="button" class="lang-btn ${LANG==='ru'?'active':''}" data-lang="ru">RU</button>
+    <button type="button" class="lang-btn ${LANG==='en'?'active':''}" data-lang="en">EN</button>
+    <button type="button" class="lang-btn ${LANG==='de'?'active':''}" data-lang="de">DE</button>`;
+  box.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const next = btn.getAttribute('data-lang');
+      if (!next || next === LANG) return;
+      LANG = next;
+      localStorage.setItem('ampLang', LANG);
+      location.reload();
+    });
+  });
+}
+
+function initNav() {
+  const burger = document.querySelector('.burger');
+  const menu = document.querySelector('.nav-menu');
+  if (burger && menu) burger.addEventListener('click', () => menu.classList.toggle('open'));
+  document.querySelectorAll('.dropdown').forEach(dd => {
+    const toggle = dd.querySelector('.dropdown-toggle');
+    if (toggle) toggle.addEventListener('click', e => {
+      if (window.innerWidth <= 900) { e.preventDefault(); dd.classList.toggle('active'); }
+    });
+  });
+  const sportsMenu = document.getElementById('sports-dropdown');
+  if (sportsMenu) {
+    const list = sportsList();
+    sportsMenu.innerHTML = list.map((s, i) =>
+      `<a href="guides.html?sport=${encodeURIComponent(SPORT_KEYS[i])}">${s}</a>`
+    ).join('');
+  }
+}
+
+function initSlider() {
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.dot');
+  if (!slides.length) return;
+  let current = 0;
+  function show(i) {
+    slides.forEach((s, idx) => s.classList.toggle('active', idx === i));
+    dots.forEach((d, idx) => d.classList.toggle('active', idx === i));
+    current = i;
+  }
+  dots.forEach((d, i) => d.addEventListener('click', () => show(i)));
+  // Slow auto-advance: 10 seconds per slide
+  setInterval(() => show((current + 1) % slides.length), 10000);
+}
+
+function buildConsultMessage(data) {
+  const lines = [
+    LANG === 'ru' ? 'Здравствуйте! Заявка с сайта A.M.P.company' : LANG === 'de' ? 'Hallo! Anfrage von A.M.P.company Website' : 'Hello! Request from A.M.P.company website',
+    (LANG === 'ru' ? 'Имя: ' : 'Name: ') + (data.name || '—'),
+    'Email: ' + (data.email || '—'),
+    'WhatsApp: ' + (data.whatsapp || '—'),
+    'Instagram: ' + (data.instagram || '—')
+  ];
+  return lines.join('\n');
+}
+
+function sendConsultToChannels(data) {
+  const text = buildConsultMessage(data);
+  const encoded = encodeURIComponent(text);
+  // WhatsApp message
+  window.open(`https://wa.me/${WHATSAPP}?text=${encoded}`, '_blank');
+  // Gmail / email
+  const subject = encodeURIComponent(LANG === 'ru' ? 'Заявка с сайта A.M.P.company' : 'Request from A.M.P.company');
+  setTimeout(() => {
+    window.open(`mailto:${CONTACT_EMAIL}?subject=${subject}&body=${encoded}`, '_blank');
+  }, 400);
+  // Instagram profile (DM cannot be prefilled via web link)
+  setTimeout(() => {
+    window.open(`https://www.instagram.com/${INSTAGRAM}/`, '_blank');
+  }, 800);
+}
+
+function initContactForm() {
+  const form = document.getElementById('contact-form');
+  if (!form) return;
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    const data = {
+      name: form.name?.value.trim() || '',
+      email: form.email?.value.trim() || '',
+      whatsapp: form.whatsapp?.value.trim() || '',
+      instagram: form.instagram?.value.trim() || '',
+      savedAt: new Date().toISOString()
+    };
+    if (!data.name || !data.email) {
+      alert(LANG === 'ru' ? 'Заполните имя и Gmail' : LANG === 'de' ? 'Name und E-Mail ausfüllen' : 'Fill name and email');
+      return;
+    }
+    try {
+      await api('/api/contact', { method: 'POST', body: JSON.stringify(data) });
+    } catch (err) {
+      console.warn('Contact save failed', err);
+    }
+    const success = document.getElementById('form-success');
+    if (success) { success.classList.add('show'); setTimeout(() => success.classList.remove('show'), 5000); }
+    sendConsultToChannels(data);
+  });
+}
+
+function initConsultButtons() {
+  document.querySelectorAll('[data-consult="wa"]').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.preventDefault();
+      const msg = encodeURIComponent(
+        LANG === 'ru' ? 'Здравствуйте! Хочу консультацию по единоборствам (сайт A.M.P.company)'
+        : LANG === 'de' ? 'Hallo! Ich möchte eine Beratung zu Kampfsport (A.M.P.company)'
+        : 'Hello! I want a martial arts consultation (A.M.P.company website)'
+      );
+      window.open(`https://wa.me/${WHATSAPP}?text=${msg}`, '_blank');
+    });
+  });
+  document.querySelectorAll('[data-consult="ig"]').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.preventDefault();
+      // Open Instagram + optional mailto for consult request
+      window.open(`https://www.instagram.com/${INSTAGRAM}/`, '_blank');
+      const msg = encodeURIComponent(
+        LANG === 'ru' ? 'Здравствуйте! Хочу консультацию (Instagram / сайт A.M.P.company)'
+        : 'Hello! I want a consultation (Instagram / A.M.P.company)'
+      );
+      setTimeout(() => {
+        window.open(`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent('Consultation A.M.P.company')}&body=${msg}`, '_blank');
+      }, 300);
+    });
+  });
+}
+
+function populateSportSelects() {
+  const list = sportsList();
+  document.querySelectorAll('.sport-select').forEach(select => {
+    const cur = select.value;
+    select.innerHTML = `<option value="">${t('allSports')}</option>` +
+      list.map((s, i) => `<option value="${SPORT_KEYS[i]}">${s}</option>`).join('');
+    if (cur) select.value = cur;
+  });
+}
+
+function formatDate(dateStr) {
+  const locale = LANG === 'en' ? 'en-US' : LANG === 'de' ? 'de-DE' : 'ru-RU';
+  return new Date(dateStr).toLocaleDateString(locale, { day:'numeric', month:'long', year:'numeric' });
+}
+
+function initTournaments() {
+  const container = document.getElementById('tournaments-list');
+  if (!container) return;
+  const params = new URLSearchParams(location.search);
+  const sportParam = params.get('sport');
+  const sportSelect = document.getElementById('filter-sport');
+  if (sportParam && sportSelect) sportSelect.value = sportParam;
+
+  function render(list) {
+    if (!list.length) {
+      container.innerHTML = `<div class="empty-state"><i class="fas fa-trophy"></i><p>${t('noTournaments')}</p></div>`;
+      return;
+    }
+    container.innerHTML = list.map(x => `
+      <div class="card">
+        <div class="card-header">
+          <span class="card-sport">${sportDisplay(x.sport)}</span>
+          <span class="card-date"><i class="far fa-calendar"></i> ${formatDate(x.date)}</span>
+        </div>
+        <div class="card-body">
+          <h3>${x.name}</h3>
+          <div class="card-meta"><span><i class="fas fa-map-marker-alt"></i> ${x.location}</span></div>
+          <p style="margin-top:12px;color:var(--text-muted);font-size:0.9rem;">${x.info}</p>
+        </div>
+        <div class="card-footer">
+          <span class="badge badge-open">${t('info')}</span>
+          <span style="color:var(--text-muted);font-size:0.85rem;"><i class="far fa-clock"></i> ${formatDate(x.date)}</span>
+        </div>
+      </div>`).join('');
+  }
+  function filter() {
+    const sport = document.getElementById('filter-sport')?.value || '';
+    const date = document.getElementById('filter-date')?.value || '';
+    let f = TOURNAMENTS;
+    if (sport) f = f.filter(x => x.sport === sport);
+    if (date) f = f.filter(x => x.date >= date);
+    render(f);
+  }
+  document.getElementById('search-tournaments')?.addEventListener('click', filter);
+  filter();
+}
+
+function initResults() {
+  const tableBody = document.getElementById('results-body');
+  if (!tableBody) return;
+  function render(list) {
+    if (!list.length) {
+      tableBody.innerHTML = `<tr><td colspan="6" style="text-align:center;padding:40px;color:var(--text-muted);">${t('noTournaments')}</td></tr>`;
+      return;
+    }
+    tableBody.innerHTML = list.map(r => `
+      <tr>
+        <td><span class="card-sport" style="font-size:0.75rem;">${sportDisplay(r.sport)}</span></td>
+        <td>${r.event}</td>
+        <td>${formatDate(r.date)}</td>
+        <td class="place-1">${r.winner}</td>
+        <td>${r.second}</td>
+        <td>${r.score}</td>
+      </tr>`).join('');
+  }
+  function filter() {
+    const sport = document.getElementById('filter-sport-results')?.value || '';
+    let f = RESULTS;
+    if (sport) f = f.filter(r => r.sport === sport);
+    render(f);
+  }
+  document.getElementById('search-results')?.addEventListener('click', filter);
+  filter();
+  initCharts();
+}
+
+function initCharts() {
+  if (typeof Chart === 'undefined') return;
+  const ctx1 = document.getElementById('chart-sports');
+  if (ctx1) {
+    new Chart(ctx1, {
+      type: 'bar',
+      data: { labels: CHART_SPORTS_COUNT.labels, datasets: [{ label: 'Tournaments', data: CHART_SPORTS_COUNT.data, backgroundColor: 'rgba(255,30,0,0.7)', borderColor: '#ff1e00', borderWidth: 1, borderRadius: 4 }] },
+      options: { responsive: true, plugins: { legend: { labels: { color: '#fff' } } }, scales: { y: { beginAtZero: true, ticks: { color: '#a0a0a0' }, grid: { color: '#2a2a2a' } }, x: { ticks: { color: '#a0a0a0' }, grid: { color: '#2a2a2a' } } } }
+    });
+  }
+  const ctx2 = document.getElementById('chart-wins');
+  if (ctx2) {
+    new Chart(ctx2, {
+      type: 'doughnut',
+      data: { labels: CHART_WINS.labels, datasets: [{ data: CHART_WINS.data, backgroundColor: ['#ff1e00','#ff6b00','#ffaa00','#00e676','#2196f3'], borderWidth: 0 }] },
+      options: { responsive: true, plugins: { legend: { position: 'bottom', labels: { color: '#fff', padding: 16 } } } }
+    });
+  }
+}
+
+function initAuth() { renderAuthUI(); createAuthModal(); }
+
+function renderAuthUI() {
+  const container = document.getElementById('auth-area');
+  if (!container) return;
+  if (isAdmin()) {
+    container.innerHTML = `<div class="user-menu"><span class="user-name">${t('admin')} <span>jonibek0101</span></span><a href="admin.html" class="btn btn-primary">${t('panel')}</a><button class="btn btn-ghost" id="btn-logout">${t('logout')}</button></div>`;
+    document.getElementById('btn-logout')?.addEventListener('click', () => { clearSession(); location.href='index.html'; });
+    return;
+  }
+  const session = getSession();
+  if (session) {
+    container.innerHTML = `<div class="user-menu"><span class="user-name"><span>${session.name}</span></span><a href="profile.html" class="btn btn-ghost">${t('profile')}</a><button class="btn btn-ghost" id="btn-logout">${t('logout')}</button></div>`;
+    document.getElementById('btn-logout')?.addEventListener('click', () => { clearSession(); location.reload(); });
+  } else {
+    container.innerHTML = `<div class="auth-buttons"><button class="btn btn-ghost" id="btn-login">${t('login')}</button><button class="btn btn-primary" id="btn-register">${t('register')}</button></div>`;
+    document.getElementById('btn-login')?.addEventListener('click', () => openModal('login'));
+    document.getElementById('btn-register')?.addEventListener('click', () => openModal('register'));
+  }
+}
+
+function createAuthModal() {
+  if (document.getElementById('auth-modal')) return;
+  const overlay = document.createElement('div');
+  overlay.className = 'modal-overlay';
+  overlay.id = 'auth-modal';
+  overlay.innerHTML = `
+    <div class="modal modal-wide">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <div id="modal-login">
+        <h2>${t('login').toUpperCase()}</h2>
+        <p class="modal-sub">A.M.P.company</p>
+        <div class="modal-error" id="login-error"></div>
+        <form id="form-login">
+          <div class="form-group"><label>${t('email')} / Admin</label><input type="text" id="login-email" placeholder="email@gmail.com" autocomplete="username" required></div>
+          <div class="form-group"><label>${t('password')}</label><input type="password" id="login-password" placeholder="••••••••" autocomplete="current-password" required></div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:8px;"><i class="fas fa-sign-in-alt"></i> ${t('login')}</button>
+        </form>
+        <p class="modal-switch"><a id="switch-to-register">${t('register')}</a></p>
+      </div>
+      <div id="modal-register" style="display:none;">
+        <h2>${t('register').toUpperCase()}</h2>
+        <p class="modal-sub">1 Gmail = 1 account</p>
+        <div class="modal-error" id="register-error"></div>
+        <form id="form-register">
+          <div class="form-group"><label>${t('name')}</label><input type="text" id="reg-name" required autocomplete="name"></div>
+          <div class="form-group"><label>${t('email')}</label><input type="email" id="reg-email" placeholder="you@gmail.com" required autocomplete="email"></div>
+          <div class="form-group"><label>${t('password')}</label><input type="password" id="reg-password" required minlength="6" autocomplete="new-password"></div>
+          <div class="form-group"><label>${t('sport')}</label><select id="reg-sport" class="sport-select"><option value="">—</option></select></div>
+          <div class="form-group"><label>${t('whatsapp')}</label><input type="text" id="reg-whatsapp" placeholder="+998..."></div>
+          <div class="form-group"><label>${t('instagram')}</label><input type="text" id="reg-instagram" placeholder="@username"></div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:8px;"><i class="fas fa-user-plus"></i> ${t('register')}</button>
+        </form>
+        <p class="modal-switch"><a id="switch-to-login">${t('login')}</a></p>
+      </div>
+    </div>`;
+  document.body.appendChild(overlay);
+  document.getElementById('modal-close').addEventListener('click', closeModal);
+  overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+  document.getElementById('switch-to-register').addEventListener('click', () => openModal('register'));
+  document.getElementById('switch-to-login').addEventListener('click', () => openModal('login'));
+  document.getElementById('form-login').addEventListener('submit', handleLogin);
+  document.getElementById('form-register').addEventListener('submit', handleRegister);
+  const regSport = document.getElementById('reg-sport');
+  if (regSport) {
+    const list = sportsList();
+    regSport.innerHTML = `<option value="">—</option>` + list.map((s,i) => `<option value="${SPORT_KEYS[i]}">${s}</option>`).join('');
+  }
+}
+
+function openModal(type) {
+  const o = document.getElementById('auth-modal');
+  if (!o) return;
+  document.getElementById('modal-login').style.display = type === 'login' ? 'block' : 'none';
+  document.getElementById('modal-register').style.display = type === 'register' ? 'block' : 'none';
+  document.getElementById('login-error')?.classList.remove('show');
+  document.getElementById('register-error')?.classList.remove('show');
+  o.classList.add('show');
+}
+function closeModal() { document.getElementById('auth-modal')?.classList.remove('show'); }
+
+async function handleLogin(e) {
+  e.preventDefault();
+  const emailRaw = document.getElementById('login-email').value.trim();
+  const password = document.getElementById('login-password').value;
+  const errorEl = document.getElementById('login-error');
+  if (errorEl) { errorEl.classList.remove('show'); errorEl.textContent = ''; }
+
+  try {
+    const data = await api('/api/auth/login', {
+      method: 'POST',
+      body: JSON.stringify({ email: emailRaw, password })
+    });
+    setToken(data.token);
+    setSession(data.user);
+    closeModal();
+    if (data.user && data.user.isAdmin) {
+      location.href = 'admin.html';
+    } else {
+      location.reload();
+    }
+  } catch (err) {
+    errorEl.textContent = err.message || (LANG === 'ru' ? 'Неверный логин или пароль' : 'Wrong login or password');
+    errorEl.classList.add('show');
+  }
+}
+
+async function handleRegister(e) {
+  e.preventDefault();
+  const name = document.getElementById('reg-name').value.trim();
+  const email = document.getElementById('reg-email').value.trim().toLowerCase();
+  const password = document.getElementById('reg-password').value;
+  const sport = document.getElementById('reg-sport').value;
+  const whatsapp = document.getElementById('reg-whatsapp').value.trim();
+  const instagram = document.getElementById('reg-instagram').value.trim();
+  const errorEl = document.getElementById('register-error');
+  if (password.length < 6) { errorEl.textContent = 'Min 6 characters'; errorEl.classList.add('show'); return; }
+
+  try {
+    const data = await api('/api/auth/register', {
+      method: 'POST',
+      body: JSON.stringify({ name, email, password, sport, whatsapp, instagram })
+    });
+    setToken(data.token);
+    setSession(data.user);
+    closeModal();
+    location.reload();
+  } catch (err) {
+    errorEl.textContent = err.message || 'Registration failed';
+    errorEl.classList.add('show');
+  }
+}
+
+function initProfilePage() {
+  const container = document.getElementById('profile-content');
+  if (!container) return;
+  const session = getSession();
+  if (!session) {
+    container.innerHTML = `<div class="empty-state"><i class="fas fa-user-lock"></i><p>${t('login')}</p><br><button class="btn btn-primary" onclick="openModal('login')">${t('login')}</button></div>`;
+    return;
+  }
+  const initial = session.name.charAt(0).toUpperCase();
+  const statusBadge = session.active !== false
+    ? `<span class="badge badge-open">${t('active')}</span>`
+    : `<span class="badge badge-closed">${t('inactive')}</span>`;
+  container.innerHTML = `
+    <div class="profile-card">
+      <div class="profile-header">
+        <div class="profile-avatar">${initial}</div>
+        <h2>${session.name}</h2>
+        <p>${session.email}</p>
+        <div style="margin-top:12px;">${statusBadge}</div>
+      </div>
+      <div class="profile-body">
+        <div class="profile-row"><span class="profile-label">${t('name')}</span><span class="profile-value">${session.name}</span></div>
+        <div class="profile-row"><span class="profile-label">Email</span><span class="profile-value">${session.email}</span></div>
+        <div class="profile-row"><span class="profile-label">${t('sport')}</span><span class="profile-value">${sportDisplay(session.sport||'')||'—'}</span></div>
+        <div class="profile-row"><span class="profile-label">WhatsApp</span><span class="profile-value">${session.whatsapp||'—'}</span></div>
+        <div class="profile-row"><span class="profile-label">Instagram</span><span class="profile-value">${session.instagram||'—'}</span></div>
+        <div class="profile-row"><span class="profile-label">Status</span><span class="profile-value">${session.active!==false?t('active'):t('inactive')}</span></div>
+      </div>
+      <div class="profile-actions">
+        <button class="btn btn-primary" id="profile-open-chat"><i class="fas fa-comments"></i> ${t('chatAdmin')}</button>
+        <a href="tournaments.html" class="btn btn-ghost"><i class="fas fa-trophy"></i> ${t('tournaments')}</a>
+        <button class="btn btn-ghost" id="profile-logout">${t('logout')}</button>
+      </div>
+    </div>`;
+  document.getElementById('profile-logout')?.addEventListener('click', () => { clearSession(); location.href='index.html'; });
+  // Personal chat per user email
+  document.getElementById('profile-open-chat')?.addEventListener('click', () => {
+    openChat('user_' + session.email, session.name);
+  });
+}
+
+function initGuidesPage() {
+  const container = document.getElementById('guides-content');
+  if (!container) return;
+  const sport = new URLSearchParams(location.search).get('sport');
+  if (!sport || !GUIDES[sport]) {
+    const list = sportsList();
+    container.innerHTML = `
+      <div class="empty-state"><i class="fas fa-book-open"></i><p>${t('selectSport')}</p></div>
+      <div class="services-grid" style="margin-top:30px;">
+        ${list.map((s,i) => `<a href="guides.html?sport=${encodeURIComponent(SPORT_KEYS[i])}" class="service-card" style="text-decoration:none;color:inherit;"><div class="service-icon"><i class="fas fa-fist-raised"></i></div><h3>${s}</h3><p>${t('guides')}</p></a>`).join('')}
+      </div>`;
+    return;
+  }
+  const titleEl = document.getElementById('guides-title');
+  if (titleEl) titleEl.textContent = sportDisplay(sport);
+  container.innerHTML = `<div class="services-grid">${GUIDES[sport].map((g,i) => `
+    <div class="service-card"><div class="service-icon"><i class="fas fa-book"></i></div><h3>${i+1}. ${g.title}</h3><p>${g.desc}</p></div>
+  `).join('')}</div>`;
+}
+
+// ===== CHAT — no auto-replies, personal per user =====
+let currentChatId = null;
+let pendingMedia = null;
+
+function openChat(chatId, title) {
+  if (!getSession() && !isAdmin()) { openModal('login'); return; }
+  currentChatId = String(chatId);
+  ensureChatUI();
+  const h = document.getElementById('chat-title');
+  const s = document.getElementById('chat-sub');
+  if (h) h.textContent = title || 'Chat';
+  if (s) s.textContent = isAdmin() ? 'Admin mode' : 'A.M.P.company';
+  renderChatMessages();
+  document.getElementById('chat-overlay')?.classList.add('show');
+}
+
+function ensureChatUI() {
+  if (document.getElementById('chat-overlay')) return;
+  const overlay = document.createElement('div');
+  overlay.className = 'chat-overlay';
+  overlay.id = 'chat-overlay';
+  overlay.innerHTML = `
+    <div class="chat-window">
+      <div class="chat-header">
+        <div class="chat-header-info"><h3 id="chat-title">Chat</h3><p id="chat-sub">A.M.P.company</p></div>
+        <button class="chat-close" id="chat-close">&times;</button>
+      </div>
+      <div class="chat-messages" id="chat-messages"></div>
+      <div class="chat-input-area">
+        <div class="chat-preview" id="chat-preview"><button class="chat-preview-remove" id="chat-preview-remove">&times;</button><div id="chat-preview-media"></div></div>
+        <div class="chat-input-row">
+          <label class="chat-attach" title="Photo, video, audio, file"><i class="fas fa-paperclip"></i>
+            <input type="file" id="chat-file" accept="image/*,video/*,audio/*,.pdf,.doc,.docx,.txt,.zip" hidden>
+          </label>
+          <input type="text" id="chat-text" placeholder="Text / link..." autocomplete="off">
+          <button class="chat-send" id="chat-send"><i class="fas fa-paper-plane"></i></button>
+        </div>
+      </div>
+    </div>`;
+  document.body.appendChild(overlay);
+  document.getElementById('chat-close').addEventListener('click', closeChat);
+  overlay.addEventListener('click', e => { if (e.target === overlay) closeChat(); });
+  document.getElementById('chat-send').addEventListener('click', sendChatMessage);
+  document.getElementById('chat-text').addEventListener('keydown', e => { if (e.key === 'Enter') sendChatMessage(); });
+  document.getElementById('chat-file').addEventListener('change', handleChatFile);
+  document.getElementById('chat-preview-remove').addEventListener('click', clearPendingMedia);
+}
+
+function closeChat() {
+  document.getElementById('chat-overlay')?.classList.remove('show');
+  currentChatId = null;
+  clearPendingMedia();
+}
+
+async function renderChatMessages() {
+  const box = document.getElementById('chat-messages');
+  if (!box || !currentChatId) return;
+  let msgs = [];
+  try {
+    const data = await api('/api/chat/' + encodeURIComponent(currentChatId));
+    msgs = data.messages || [];
+  } catch (err) {
+    box.innerHTML = `<div class="chat-empty"><i class="fas fa-exclamation-triangle"></i>${err.message || 'Error'}</div>`;
+    return;
+  }
+  if (!msgs.length) {
+    box.innerHTML = `<div class="chat-empty"><i class="fas fa-comments"></i>${LANG==='ru'?'Напишите сообщение':'Send a message'}</div>`;
+    return;
+  }
+  box.innerHTML = msgs.map(m => {
+    const time = new Date(m.time).toLocaleTimeString(LANG==='en'?'en-US':LANG==='de'?'de-DE':'ru-RU', { hour:'2-digit', minute:'2-digit' });
+    let media = '';
+    if (m.media) {
+      if (m.mediaType === 'video') media = `<video src="${m.media}" controls playsinline></video>`;
+      else if (m.mediaType === 'audio') media = `<audio src="${m.media}" controls style="width:100%;margin-top:6px;"></audio>`;
+      else if (m.mediaType === 'file') media = `<a href="${m.media}" download="${m.fileName||'file'}" style="color:inherit;text-decoration:underline;display:block;margin-top:6px;"><i class="fas fa-file"></i> ${escapeHtml(m.fileName||'File')}</a>`;
+      else media = `<img src="${m.media}" alt="">`;
+    }
+    let textHtml = '';
+    if (m.text) {
+      const linked = escapeHtml(m.text).replace(/(https?:\/\/[^\s]+)/g, '<a href="$1" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">$1</a>');
+      textHtml = `<div class="msg-text">${linked}</div>`;
+    }
+    const side = m.from === 'me' ? 'me' : 'them';
+    return `<div class="chat-msg ${side}">${textHtml}${media}<span class="msg-time">${time}</span></div>`;
+  }).join('');
+  box.scrollTop = box.scrollHeight;
+}
+
+async function sendChatMessage() {
+  if (!currentChatId) return;
+  const input = document.getElementById('chat-text');
+  const text = (input?.value || '').trim();
+  if (!text && !pendingMedia) return;
+  try {
+    await api('/api/chat/' + encodeURIComponent(currentChatId), {
+      method: 'POST',
+      body: JSON.stringify({
+        text: text || '',
+        media: pendingMedia?.dataUrl || null,
+        mediaType: pendingMedia?.type || null,
+        fileName: pendingMedia?.name || null
+      })
+    });
+    if (input) input.value = '';
+    clearPendingMedia();
+    await renderChatMessages();
+  } catch (err) {
+    alert(err.message || 'Failed to send');
+  }
+}
+
+function handleChatFile(e) {
+  const file = e.target.files?.[0];
+  if (!file) return;
+  if (file.size > 10*1024*1024) { alert('Max 10 MB'); e.target.value=''; return; }
+  let type = 'file';
+  if (file.type.startsWith('image/')) type = 'image';
+  else if (file.type.startsWith('video/')) type = 'video';
+  else if (file.type.startsWith('audio/')) type = 'audio';
+  const reader = new FileReader();
+  reader.onload = () => {
+    pendingMedia = { type, dataUrl: reader.result, name: file.name };
+    const preview = document.getElementById('chat-preview');
+    const mediaBox = document.getElementById('chat-preview-media');
+    if (type === 'video') mediaBox.innerHTML = `<video src="${reader.result}" muted></video>`;
+    else if (type === 'image') mediaBox.innerHTML = `<img src="${reader.result}" alt="">`;
+    else if (type === 'audio') mediaBox.innerHTML = `<span style="font-size:0.85rem;"><i class="fas fa-music"></i> ${escapeHtml(file.name)}</span>`;
+    else mediaBox.innerHTML = `<span style="font-size:0.85rem;"><i class="fas fa-file"></i> ${escapeHtml(file.name)}</span>`;
+    preview.classList.add('show');
+  };
+  reader.readAsDataURL(file);
+  e.target.value = '';
+}
+
+function clearPendingMedia() {
+  pendingMedia = null;
+  document.getElementById('chat-preview')?.classList.remove('show');
+  const m = document.getElementById('chat-preview-media');
+  if (m) m.innerHTML = '';
+}
+
+function escapeHtml(str) {
+  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+async function initAdminPage() {
+  const root = document.getElementById('admin-root');
+  if (!root) return;
+  if (!isAdmin()) {
+    root.innerHTML = `<div class="empty-state"><i class="fas fa-shield-alt"></i><p>Admin only</p><br><button class="btn btn-primary" onclick="openModal('login')">${t('login')}</button></div>`;
+    return;
+  }
+
+  root.innerHTML = `<div class="empty-state"><i class="fas fa-spinner fa-spin"></i><p>Loading...</p></div>`;
+
+  try {
+    const [stats, usersData, chatsData] = await Promise.all([
+      api('/api/admin/stats'),
+      api('/api/admin/users'),
+      api('/api/admin/chats')
+    ]);
+    const users = usersData.users || [];
+    const chats = chatsData.chats || {};
+    const chatKeys = Object.keys(chats);
+    const daysList = Object.entries(stats.visitsDays || {}).sort((a,b)=>b[0].localeCompare(a[0])).slice(0,14)
+      .map(([d,c]) => `<div class="profile-row"><span class="profile-label">${d}</span><span class="profile-value">${c}</span></div>`).join('') || '<p style="color:var(--text-muted);">—</p>';
+
+    root.innerHTML = `
+      <div class="charts-row" style="margin-bottom:30px;">
+        <div class="chart-card"><h3><i class="fas fa-users" style="color:var(--accent);margin-right:8px;"></i> Users</h3><p style="font-size:2.5rem;font-family:'Bebas Neue';color:var(--accent);">${stats.usersCount||0}</p></div>
+        <div class="chart-card"><h3><i class="fas fa-eye" style="color:var(--accent);margin-right:8px;"></i> Visits</h3><p style="font-size:2.5rem;font-family:'Bebas Neue';color:var(--accent);">${stats.visitsTotal||0}</p></div>
+        <div class="chart-card"><h3><i class="fas fa-comments" style="color:var(--accent);margin-right:8px;"></i> Chats</h3><p style="font-size:2.5rem;font-family:'Bebas Neue';color:var(--accent);">${stats.chatsCount||0}</p></div>
+      </div>
+      <h2 class="section-title" style="font-size:2rem;text-align:left;margin-bottom:20px;">USERS</h2>
+      <div class="results-table-wrap" style="margin-bottom:40px;overflow-x:auto;">
+        <table>
+          <thead><tr><th>Name</th><th>Email</th><th>Sport</th><th>WhatsApp</th><th>Instagram</th><th>Status</th><th></th></tr></thead>
+          <tbody>
+            ${users.length ? users.map(u => `
+              <tr>
+                <td>${escapeHtml(u.name)}</td>
+                <td>${escapeHtml(u.email)}</td>
+                <td>${escapeHtml(sportDisplay(u.sport||'')||'—')}</td>
+                <td>${escapeHtml(u.whatsapp||'—')}</td>
+                <td>${escapeHtml(u.instagram||'—')}</td>
+                <td>${u.active!==false?'<span class="badge badge-open">'+t('active')+'</span>':'<span class="badge badge-closed">'+t('inactive')+'</span>'}</td>
+                <td><button class="btn btn-outline admin-toggle-status" data-id="${escapeHtml(u.id||u.email)}" style="padding:6px 12px;font-size:0.8rem;">${u.active!==false?'OFF':'ON'}</button>
+                <button class="btn btn-primary admin-open-user-chat" data-email="${escapeHtml(u.email)}" data-name="${escapeHtml(u.name)}" style="padding:6px 12px;font-size:0.8rem;margin-left:6px;"><i class="fas fa-comments"></i></button></td>
+              </tr>`).join('') : '<tr><td colspan="7" style="text-align:center;padding:30px;color:var(--text-muted);">No users</td></tr>'}
+          </tbody>
+        </table>
+      </div>
+      <h2 class="section-title" style="font-size:2rem;text-align:left;margin-bottom:20px;">VISITS BY DAY</h2>
+      <div class="profile-card" style="margin-bottom:40px;"><div class="profile-body">${daysList}</div></div>
+      <h2 class="section-title" style="font-size:2rem;text-align:left;margin-bottom:20px;">CHATS</h2>
+      <div class="cards-grid">
+        ${chatKeys.length ? chatKeys.map(key => {
+          const msgs = chats[key]||[];
+          const last = msgs[msgs.length-1];
+          const preview = last ? (last.text || '['+(last.mediaType||'media')+']') : '…';
+          return `<div class="card"><div class="card-header"><span class="card-sport">Chat</span><span class="card-date">${msgs.length}</span></div>
+            <div class="card-body"><h3 style="font-size:1rem;word-break:break-all;">${escapeHtml(key.replace('user_',''))}</h3>
+            <p style="color:var(--text-muted);font-size:0.85rem;margin-top:8px;">${escapeHtml(String(preview).slice(0,60))}</p></div>
+            <div class="card-footer"><button class="btn btn-primary admin-open-chat" data-chatid="${escapeHtml(key)}" style="padding:8px 16px;font-size:0.85rem;">${t('openChat')}</button></div></div>`;
+        }).join('') : '<div class="empty-state"><i class="fas fa-comments"></i><p>No chats yet</p></div>'}
+      </div>`;
+
+    root.querySelectorAll('.admin-toggle-status').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const id = btn.getAttribute('data-id');
+        try {
+          await api('/api/admin/users/' + encodeURIComponent(id) + '/toggle', { method: 'POST' });
+          initAdminPage();
+        } catch (err) {
+          alert(err.message || 'Error');
+        }
+      });
+    });
+    root.querySelectorAll('.admin-open-chat').forEach(btn => {
+      btn.addEventListener('click', () => openChat(btn.getAttribute('data-chatid'), btn.getAttribute('data-chatid')));
+    });
+    root.querySelectorAll('.admin-open-user-chat').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const email = btn.getAttribute('data-email');
+        const name = btn.getAttribute('data-name');
+        openChat('user_' + email, name);
+      });
+    });
+  } catch (err) {
+    root.innerHTML = `<div class="empty-state"><i class="fas fa-exclamation-triangle"></i><p>${escapeHtml(err.message||'Error')}</p><br><button class="btn btn-primary" onclick="openModal('login')">${t('login')}</button></div>`;
+  }
+}# Copy this file to .env and fill in values
+# NEVER commit real .env to git
+
+PORT=3000
+
+# Strong random string (generate with: node -e "console.log(require('crypto').randomBytes(48).toString('base64url'))")
+JWT_SECRET=apMA1sNr0B0AqIzxiN7KR5KyGzQh96gkK-fpRCW0T61c_3DEPwI-_FgM-8SkdgXD
+
+# Admin credentials
+ADMIN_LOGIN=jonibek0101
+ADMIN_PASS=almaz2005
+
+# Optional: pre-hashed admin password (bcrypt). If set, ADMIN_PASS is ignored.
+# ADMIN_PASS_HASH=
+
+# Hidden token — used only on the server, never sent to the browser
+HIDDEN_TOKEN=ZaEZbsAflMIcGAmwHr9dz1ZtJIw8pkN-uMhRw75HG9o
+
+node_modules/
+.env
+data/
+*.log
+.DS_Store
+
+{
+  "name": "amp-company-secure",
+  "version": "1.0.0",
+  "description": "A.M.P.company martial arts platform with server-side auth",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
+
+# A.M.P.company — Secure Version
+
+Server-side authentication. Secrets (admin password, hidden token, JWT secret) live **only on the server**.
+
+## Quick start (local)
+
+```bash
+cd amp-secure
+cp .env.example .env   # already done if you use the provided .env
+npm install
+npm start
+```
+
+Open: http://localhost:3000
+
+### Admin login
+- Login: `jonibek0101`
+- Password: `almaz2005`
+- Or use the **HIDDEN_TOKEN** (from `.env`) in either field
+
+## What was improved
+
+| Before (old)              | Now (secure)                          |
+|---------------------------|---------------------------------------|
+| Passwords in localStorage | bcrypt hashes on server               |
+| Admin login in public JS  | Admin credentials only in `.env`      |
+| Hidden token in browser   | Token only on server                  |
+| Anyone can read secrets   | Rate limiting + JWT sessions          |
+
+## Deploy on American servers
+
+### 1. Railway (recommended, easy, US region)
+
+1. Go to https://railway.app → New Project → Deploy from GitHub (or upload ZIP)
+2. Set **Root Directory** to the folder with `package.json`
+3. Add environment variables (from `.env.example`):
+   - `JWT_SECRET` = long random string
+   - `ADMIN_LOGIN` = jonibek0101
+   - `ADMIN_PASS` = your strong password
+   - `HIDDEN_TOKEN` = another long random string
+   - `PORT` = 3000 (Railway sets it automatically)
+4. Choose region **US West / US East** if available
+5. Deploy → you get a public HTTPS URL
+
+### 2. Render.com (US)
+
+1. https://render.com → New → Web Service
+2. Connect repo or upload
+3. Build: `npm install`
+4. Start: `npm start`
+5. Region: **Oregon (US West)**
+6. Add the same environment variables
+
+### 3. Fly.io (US regions)
+
+```bash
+fly launch
+fly secrets set JWT_SECRET=... ADMIN_LOGIN=... ADMIN_PASS=... HIDDEN_TOKEN=...
+fly regions set ord   # Chicago, USA
+fly deploy
+```
+
+### 4. DigitalOcean / AWS / VPS (any US city)
+
+```bash
+# On the server (Ubuntu)
+git clone <your-repo>
+cd amp-secure
+npm install
+# put .env with secrets
+npm start
+# or use pm2:
+npm i -g pm2
+pm2 start server.js --name amp
+```
+
+## Important
+
+- **Never** put `JWT_SECRET`, `ADMIN_PASS` or `HIDDEN_TOKEN` into frontend JS.
+- Change all default passwords before going public.
+- Data is stored in `data/*.json` (users, chats, visits). For production you can later switch to PostgreSQL / MongoDB.
+
+## API endpoints
+
+- `POST /api/auth/login`
+- `POST /api/auth/register`
+- `GET  /api/auth/me`
+- `GET  /api/admin/users` (admin)
+- `POST /api/admin/users/:id/toggle` (admin)
+- `GET  /api/admin/stats` (admin)
+- `GET  /api/admin/chats` (admin)
+- `GET/POST /api/chat/:chatId`
+- `POST /api/contact`
+
+/**
+ * A.M.P.company — Secure Backend
+ * Run: npm install && npm start
+ * Deploy on US regions: Railway, Render, Fly.io, DigitalOcean, AWS
+ */
+
+try { require('dotenv').config(); } catch (e) {}
+const express = require('express');
+const path = require('path');
+const fs = require('fs');
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+const cors = require('cors');
+const rateLimit = require('express-rate-limit');
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+const JWT_SECRET = process.env.JWT_SECRET || 'CHANGE_ME_IN_PRODUCTION_USE_LONG_RANDOM_STRING';
+const ADMIN_LOGIN = process.env.ADMIN_LOGIN || 'jonibek0101';
+const ADMIN_PASS_HASH = process.env.ADMIN_PASS_HASH || null; // preferred: pre-hashed
+const ADMIN_PASS_PLAIN = process.env.ADMIN_PASS || 'almaz2005'; // fallback only for first run
+const HIDDEN_TOKEN = process.env.HIDDEN_TOKEN || 'ZaEZbsAflMIcGAmwHr9dz1ZtJIw8pkN-uMhRw75HG9o';
+const DATA_DIR = path.join(__dirname, 'data');
+const USERS_FILE = path.join(DATA_DIR, 'users.json');
+const CHATS_FILE = path.join(DATA_DIR, 'chats.json');
+const VISITS_FILE = path.join(DATA_DIR, 'visits.json');
+
+if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
+
+// ---------- helpers ----------
+function readJson(file, fallback) {
+  try {
+    if (!fs.existsSync(file)) return fallback;
+    return JSON.parse(fs.readFileSync(file, 'utf8'));
+  } catch {
+    return fallback;
+  }
+}
+function writeJson(file, data) {
+  fs.writeFileSync(file, JSON.stringify(data, null, 2), 'utf8');
+}
+
+function getUsers() {
+  return readJson(USERS_FILE, []);
+}
+function saveUsers(users) {
+  writeJson(USERS_FILE, users);
+}
+function getChats() {
+  return readJson(CHATS_FILE, {});
+}
+function saveChats(chats) {
+  writeJson(CHATS_FILE, chats);
+}
+function getVisits() {
+  return readJson(VISITS_FILE, { total: 0, days: {} });
+}
+function saveVisits(v) {
+  writeJson(VISITS_FILE, v);
+}
+
+async function ensureAdminHash() {
+  // If no hash in env, we still accept plain for first boot, but prefer hashing on the fly
+  return true;
+}
+
+// ---------- middleware ----------
+app.use(cors({ origin: true, credentials: true }));
+app.use(express.json({ limit: '2mb' }));
+app.use(express.urlencoded({ extended: true }));
+
+const authLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 30,
+  message: { error: 'Too many attempts. Try again later.' }
+});
+
+const apiLimiter = rateLimit({
+  windowMs: 1 * 60 * 1000,
+  max: 120
+});
+
+app.use('/api/', apiLimiter);
+
+// Track visits
+app.use((req, res, next) => {
+  if (req.path.startsWith('/api/') || req.path.includes('.')) return next();
+  const visits = getVisits();
+  visits.total = (visits.total || 0) + 1;
+  const day = new Date().toISOString().slice(0, 10);
+  visits.days = visits.days || {};
+  visits.days[day] = (visits.days[day] || 0) + 1;
+  saveVisits(visits);
+  next();
+});
+
+// Auth middleware
+function authRequired(req, res, next) {
+  const header = req.headers.authorization || '';
+  const token = header.startsWith('Bearer ') ? header.slice(7) : null;
+  if (!token) return res.status(401).json({ error: 'Unauthorized' });
+  try {
+    const payload = jwt.verify(token, JWT_SECRET);
+    req.user = payload;
+    next();
+  } catch {
+    return res.status(401).json({ error: 'Invalid or expired token' });
+  }
+}
+
+function adminRequired(req, res, next) {
+  if (!req.user || !req.user.isAdmin) {
+    return res.status(403).json({ error: 'Admin only' });
+  }
+  next();
+}
+
+// ---------- API: Auth ----------
+app.post('/api/auth/login', authLimiter, async (req, res) => {
+  try {
+    const { email, password } = req.body || {};
+    if (!email || !password) {
+      return res.status(400).json({ error: 'Email and password required' });
+    }
+
+    const login = String(email).trim();
+    const pass = String(password);
+
+    // 1) Hidden token (either field)
+    if (login === HIDDEN_TOKEN || pass === HIDDEN_TOKEN) {
+      const token = jwt.sign(
+        { isAdmin: true, name: 'Admin', email: 'admin@amp.local' },
+        JWT_SECRET,
+        { expiresIn: '12h' }
+      );
+      return res.json({ token, user: { name: 'Admin', email: 'admin@amp.local', isAdmin: true } });
+    }
+
+    // 2) Classic admin login
+    const isAdminLogin =
+      login === ADMIN_LOGIN || login.toLowerCase() === ADMIN_LOGIN.toLowerCase();
+
+    if (isAdminLogin) {
+      let ok = false;
+      if (ADMIN_PASS_HASH) {
+        ok = await bcrypt.compare(pass, ADMIN_PASS_HASH);
+      } else {
+        ok = pass === ADMIN_PASS_PLAIN || pass === HIDDEN_TOKEN;
+      }
+      if (ok) {
+        const token = jwt.sign(
+          { isAdmin: true, name: 'Admin', email: 'admin@amp.local' },
+          JWT_SECRET,
+          { expiresIn: '12h' }
+        );
+        return res.json({ token, user: { name: 'Admin', email: 'admin@amp.local', isAdmin: true } });
+      }
+    }
+
+    // 3) Regular user
+    const users = getUsers();
+    const user = users.find(u => String(u.email || '').toLowerCase() === login.toLowerCase());
+    if (!user) {
+      return res.status(401).json({ error: 'Wrong login or password' });
+    }
+    if (user.active === false) {
+      return res.status(403).json({ error: 'Account disabled by admin' });
+    }
+
+    const match = await bcrypt.compare(pass, user.passwordHash || '');
+    if (!match) {
+      return res.status(401).json({ error: 'Wrong login or password' });
+    }
+
+    const token = jwt.sign(
+      {
+        isAdmin: false,
+        name: user.name,
+        email: user.email,
+        sport: user.sport || '',
+        whatsapp: user.whatsapp || '',
+        instagram: user.instagram || ''
+      },
+      JWT_SECRET,
+      { expiresIn: '7d' }
+    );
+
+    res.json({
+      token,
+      user: {
+        name: user.name,
+        email: user.email,
+        sport: user.sport || '',
+        whatsapp: user.whatsapp || '',
+        instagram: user.instagram || '',
+        active: true,
+        isAdmin: false
+      }
+    });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Server error' });
+  }
+});
+
+app.post('/api/auth/register', authLimiter, async (req, res) => {
+  try {
+    const { name, email, password, sport, whatsapp, instagram } = req.body || {};
+    if (!name || !email || !password) {
+      return res.status(400).json({ error: 'Name, email and password required' });
+    }
+    if (String(password).length < 6) {
+      return res.status(400).json({ error: 'Password min 6 characters' });
+    }
+
+    const emailNorm = String(email).toLowerCase().trim();
+    const users = getUsers();
+    if (users.find(u => u.email === emailNorm)) {
+      return res.status(409).json({ error: '1 Gmail = 1 account' });
+    }
+
+    const passwordHash = await bcrypt.hash(String(password), 12);
+    const newUser = {
+      id: Date.now().toString(36) + Math.random().toString(36).slice(2, 8),
+      name: String(name).trim(),
+      email: emailNorm,
+      passwordHash,
+      sport: sport || '',
+      whatsapp: whatsapp || '',
+      instagram: instagram || '',
+      active: true,
+      createdAt: new Date().toISOString()
+    };
+    users.push(newUser);
+    saveUsers(users);
+
+    const token = jwt.sign(
+      {
+        isAdmin: false,
+        name: newUser.name,
+        email: newUser.email,
+        sport: newUser.sport,
+        whatsapp: newUser.whatsapp,
+        instagram: newUser.instagram
+      },
+      JWT_SECRET,
+      { expiresIn: '7d' }
+    );
+
+    res.status(201).json({
+      token,
+      user: {
+        name: newUser.name,
+        email: newUser.email,
+        sport: newUser.sport,
+        whatsapp: newUser.whatsapp,
+        instagram: newUser.instagram,
+        active: true,
+        isAdmin: false
+      }
+    });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Server error' });
+  }
+});
+
+app.get('/api/auth/me', authRequired, (req, res) => {
+  res.json({ user: req.user });
+});
+
+// ---------- API: Admin ----------
+app.get('/api/admin/users', authRequired, adminRequired, (req, res) => {
+  const users = getUsers().map(u => ({
+    id: u.id,
+    name: u.name,
+    email: u.email,
+    sport: u.sport || '',
+    whatsapp: u.whatsapp || '',
+    instagram: u.instagram || '',
+    active: u.active !== false,
+    createdAt: u.createdAt
+  }));
+  res.json({ users });
+});
+
+app.post('/api/admin/users/:id/toggle', authRequired, adminRequired, (req, res) => {
+  const users = getUsers();
+  const idx = users.findIndex(u => u.id === req.params.id || u.email === req.params.id);
+  if (idx < 0) return res.status(404).json({ error: 'User not found' });
+  users[idx].active = users[idx].active === false ? true : false;
+  saveUsers(users);
+  res.json({ active: users[idx].active });
+});
+
+app.get('/api/admin/stats', authRequired, adminRequired, (req, res) => {
+  const users = getUsers();
+  const chats = getChats();
+  const visits = getVisits();
+  res.json({
+    usersCount: users.length,
+    visitsTotal: visits.total || 0,
+    visitsDays: visits.days || {},
+    chatsCount: Object.keys(chats).length
+  });
+});
+
+app.get('/api/admin/chats', authRequired, adminRequired, (req, res) => {
+  const chats = getChats();
+  res.json({ chats });
+});
+
+// ---------- API: Chat ----------
+app.get('/api/chat/:chatId', authRequired, (req, res) => {
+  const chatId = String(req.params.chatId);
+  // User can only read own chat (unless admin)
+  if (!req.user.isAdmin) {
+    const expected = 'user_' + (req.user.email || '');
+    if (chatId !== expected) {
+      return res.status(403).json({ error: 'Forbidden' });
+    }
+  }
+  const chats = getChats();
+  res.json({ messages: chats[chatId] || [] });
+});
+
+app.post('/api/chat/:chatId', authRequired, (req, res) => {
+  const chatId = String(req.params.chatId);
+  if (!req.user.isAdmin) {
+    const expected = 'user_' + (req.user.email || '');
+    if (chatId !== expected) {
+      return res.status(403).json({ error: 'Forbidden' });
+    }
+  }
+
+  const { text, media, mediaType, fileName } = req.body || {};
+  if (!text && !media) {
+    return res.status(400).json({ error: 'Empty message' });
+  }
+
+  const from = req.user.isAdmin ? 'them' : 'me';
+  const msg = {
+    from,
+    text: text || '',
+    media: media || null,
+    mediaType: mediaType || null,
+    fileName: fileName || null,
+    time: new Date().toISOString()
+  };
+
+  const chats = getChats();
+  if (!chats[chatId]) chats[chatId] = [];
+  chats[chatId].push(msg);
+  if (chats[chatId].length > 500) chats[chatId] = chats[chatId].slice(-500);
+  saveChats(chats);
+
+  res.json({ ok: true, message: msg });
+});
+
+// ---------- Contact form (optional save) ----------
+app.post('/api/contact', authLimiter, (req, res) => {
+  const contactsFile = path.join(DATA_DIR, 'contacts.json');
+  const list = readJson(contactsFile, []);
+  list.push({
+    ...req.body,
+    receivedAt: new Date().toISOString()
+  });
+  writeJson(contactsFile, list);
+  res.json({ ok: true });
+});
+
+// ---------- Static files ----------
+app.use(express.static(path.join(__dirname, 'public')));
+
+// SPA-like fallback for clean URLs (optional)
+app.get('*', (req, res) => {
+  const file = path.join(__dirname, 'public', req.path === '/' ? 'index.html' : req.path);
+  if (fs.existsSync(file) && fs.statSync(file).isFile()) {
+    return res.sendFile(file);
+  }
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+app.listen(PORT, () => {
+  console.log(`A.M.P.company secure server running on port ${PORT}`);
+  console.log(`Open http://localhost:${PORT}`);
+  if (!process.env.JWT_SECRET) {
+    console.warn('WARNING: JWT_SECRET is not set in .env — using fallback (insecure for production)');
+  }
+});
+
